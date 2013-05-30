@@ -1,4 +1,4 @@
-package com.hatbazar.spring;
+package com.hatbazar.controllers;
 
 import org.junit.Before;
 import org.junit.Test;
