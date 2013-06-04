@@ -15,3 +15,11 @@ DELIMITER;
 ALTER TABLE `user` change `password` `password` VARCHAR (32)
 INSERT INTO `user` (`username`,`password`) VALUES ('sssh',MD5('b'));
 UPDATE `user` SET `username`='h';
+
+CREATE TABLE `user_role` (`user_id` INT NOT NULL, `role_id` INT NOT NULL,
+ FOREIGN KEY (`user_id`) REFERENCES `user`(`id`),
+  FOREIGN KEY (`role_id`) REFERENCES `role`(`id`)
+);
+
+INSERT INTO `role`(`role_name`)VALUES ("USER_ADMIN"),("USER_NORMAL");
+INSERT INTO `user_role`(`user_id`,`role_id`)VALUES (1,1);
