@@ -14,6 +14,13 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -41,6 +48,8 @@
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.15" level="project" />
+    <orderEntry type="library" name="sitemesh-2.4.2" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
   </component>
 </module>
 
