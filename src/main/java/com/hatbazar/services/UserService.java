@@ -1,5 +1,7 @@
 package com.hatbazar.services;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+
 /**
  * Created with IntelliJ IDEA.
  * User: bsejawal
@@ -8,5 +10,13 @@ package com.hatbazar.services;
  * To change this template use File | Settings | File Templates.
  */
 public class UserService {
+    JdbcTemplate myJdbc;
 
+    public JdbcTemplate getMyJdbc() {
+        return myJdbc;
+    }
+
+    public void setMyJdbc(JdbcTemplate myJdbc) {
+        this.myJdbc = myJdbc;
+    }
 }

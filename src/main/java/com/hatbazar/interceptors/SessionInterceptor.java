@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
  * Time: 9:04 AM
  * To change this template use File | Settings | File Templates.
  */
-//extends HandlerInterceptorAdapter
 public class SessionInterceptor extends HandlerInterceptorAdapter{
 
 
