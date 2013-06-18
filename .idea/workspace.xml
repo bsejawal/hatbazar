@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\githubpro\hatbazar\src\main\java\com\hatbazar\dao\JdbcUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java" />
-      <change type="MOVED" beforePath="D:\githubpro\hatbazar\src\main\java\com\hatbazar\interfaces\UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/interfaces/DAO.java" />
     </list>
     <ignored path="hatbazar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371582607595" ignored="false" />
+    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371585516480" ignored="false" />
     <file path="/fragment.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371495317590" ignored="false" />
     <file path="/User.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369798263818" ignored="false" />
     <file path="/IndexController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369798780157" ignored="false" />
@@ -844,7 +838,11 @@
       <created>1371529215536</created>
       <updated>1371529215536</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="database connection implementation">
+      <created>1371585527400</created>
+      <updated>1371585527400</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -923,7 +921,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="database connection implementation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -940,6 +938,7 @@
     <MESSAGE value="change Hello controller" />
     <MESSAGE value="jquery ui plugin added" />
     <MESSAGE value="some changes" />
+    <MESSAGE value="database connection implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
