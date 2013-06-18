@@ -13,18 +13,18 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="dataSource"
-          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/hatbazar" />
-        <property name="username" value="root" />
-        <property name="password" value="root" />
-    </bean>
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource" />
-    </bean>
+    <!--<bean id="dataSource"-->
+          <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
+        <!--<property name="url" value="jdbc:mysql://localhost:3306/hatbazar" />-->
+        <!--<property name="username" value="root" />-->
+        <!--<property name="password" value="root" />-->
+    <!--</bean>-->
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<property name="dataSource" ref="dataSource" />-->
+    <!--</bean>-->
 
-    <bean id="userDao" class="com.hatbazar.dao.JdbcUserDAO"></bean>
+    <!--<bean id="userDao" class="com.hatbazar.dao.UserDaorDao>-->
         <!--<property name="jtemp" ref="jdbcTemplate" />-->
     <!--</bean>-->
     <bean id="userService" class="com.hatbazar.services.UserService"></bean>

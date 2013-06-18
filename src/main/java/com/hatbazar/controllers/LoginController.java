@@ -31,7 +31,7 @@ public class LoginController {
 
     @RequestMapping(value = "/authencate", method = RequestMethod.POST)
     public String authencate(@ModelAttribute("SpringWeb")User user,
-                             ModelMap model) {
+                             ModelMap model) throws IllegalAccessException, InstantiationException {
         model.addAttribute("username", user.getUsername());
         model.addAttribute("password", user.getPassword());
         model.addAttribute("message", "User form parameter :::: ");

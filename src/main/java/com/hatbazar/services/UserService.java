@@ -1,12 +1,7 @@
 package com.hatbazar.services;
 
-import com.hatbazar.dao.JdbcUserDAO;
+import com.hatbazar.dao.UserDao;
 import com.hatbazar.domains.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 //import org.springframework.dao.core.JdbcTemplate;
 
 /**
@@ -17,10 +12,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  * To change this template use File | Settings | File Templates.
  */
 public class UserService {
-    @Autowired
-    JdbcUserDAO userDao;
+//    @Autowired
+//    JdbcTemplate jdbcTemplate;
 
-    public void authencate(User user){
+    public void authencate(User user) throws InstantiationException, IllegalAccessException {
+        UserDao userDao = new UserDao();
         user.setPassword("123456789");
         user.setUsername("testusername");
         user.setPhone("testphone");
@@ -35,7 +31,7 @@ public class UserService {
 //
 //
 //    public void callJDBCTEmplateExample(){
-//        JdbcUserDAO jdbcUserDAO =
-//                (JdbcUserDAO)context.getBean("userDao");
+//        DAO jdbcUserDAO =
+//                (DAO)context.getBean("userDao");
 //    }
 }

@@ -1,19 +1,15 @@
 package com.hatbazar.interfaces;
 import com.hatbazar.domains.User;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 import javax.sql.DataSource;
-public interface UserDao {
-    /**
-     * This is the method to be used to initialize
-     * database resources ie. connection.
-     */
-    public void setDataSource(DataSource ds);
+public interface DAO {
     /**
      * This is the method to be used to create
      * a record in the User table.
      */
-    public void create(User user);
+    public boolean create(User user) throws InstantiationException, IllegalAccessException;
     /**
      * This is the method to be used to list down
      * a record from the User table corresponding
