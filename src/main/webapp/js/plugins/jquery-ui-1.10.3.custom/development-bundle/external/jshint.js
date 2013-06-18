@@ -4358,7 +4358,7 @@ loop:
     reserve("let");
     reserve("yield");
     reserve("implements");
-    reserve("interface");
+    reserve("interfaces");
     reserve("package");
     reserve("private");
     reserve("protected");

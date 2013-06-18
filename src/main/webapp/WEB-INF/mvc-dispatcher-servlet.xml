@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -12,33 +13,41 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/hatbazar"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/hatbazar" />
+        <property name="username" value="root" />
+        <property name="password" value="root" />
     </bean>
-
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource">
-            <ref bean="dataSource" />
-        </property>
-    </bean>
-    <bean id="userService" class="com.hatbazar.services.UserService">
-        <property name="myJdbc" ref="jdbcTemplate" />
+        <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean id="firstController" class="com.hatbazar.controllers.UserController">
-        <property name="userService" ref="userService" />
-    </bean>
+    <bean id="userDao" class="com.hatbazar.dao.JdbcUserDAO"></bean>
+        <!--<property name="jtemp" ref="jdbcTemplate" />-->
+    <!--</bean>-->
+    <bean id="userService" class="com.hatbazar.services.UserService"></bean>
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/*" />
-            <bean class="com.hatbazar.interceptors.SessionInterceptor" />
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >-->
+        <!--<property name="driverClassName" value="com.mysql.dao.Driver"/>-->
+        <!--<property name="url" value="dao:mysql://localhost:3306/"/>-->
+        <!--<property name="defaultCatalog"  value="hatbazar" />-->
+        <!--<property name="username" value="root"/>-->
+        <!--<property name="password" value="root"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<property name="dataSource" ref="dataSource" />-->
+    <!--</bean>-->
+
+    <!--<bean id="userService" class="com.hatbazar.services.UserService"></bean>-->
+    <!--<bean id="user" class="com.hatbazar.controllers.UserController"></bean>-->
+
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/*" />-->
+            <!--<bean class="com.hatbazar.interceptors.SessionInterceptor" />-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 </beans>
-
-        <!--org.apache.commons.dbcp.BasicDataSourc-->

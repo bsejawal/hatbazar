@@ -50,6 +50,11 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.15" level="project" />
     <orderEntry type="library" name="sitemesh-2.4.2" level="project" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="commons-dbcp-1.4" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.16" level="project" />
+    <orderEntry type="library" name="spring-jdbc-3.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="servlet-api-2.5" level="project" />
+    <orderEntry type="library" name="spring-dao-1.0.2" level="project" />
   </component>
 </module>
 

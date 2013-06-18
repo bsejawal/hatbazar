@@ -9,15 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-    UserService userService;
-
-    public UserService getUserService() {
-        return userService;
-    }
-
-    public void setUserService(UserService userService) {
-        this.userService = userService;
-    }
 
     @RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {

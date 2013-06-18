@@ -1,7 +1,11 @@
 package com.hatbazar.controllers;
 
+import com.hatbazar.domains.User;
+import com.hatbazar.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,11 +20,22 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+    @Autowired
+    UserService userService;
+
+
     @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView index(ModelMap model) {
-        ModelAndView mav = new ModelAndView();
-        mav.setViewName("login/index");
-//        model.addAttribute("message", "Welcome to Hatbazar Systam!");
-        return mav;
+    public ModelAndView index() {
+        return new ModelAndView("login/index", "command", new User());
+    }
+
+    @RequestMapping(value = "/authencate", method = RequestMethod.POST)
+    public String authencate(@ModelAttribute("SpringWeb")User user,
+                             ModelMap model) {
+        model.addAttribute("username", user.getUsername());
+        model.addAttribute("password", user.getPassword());
+        model.addAttribute("message", "User form parameter :::: ");
+        userService.authencate(user);
+        return "login/profile";
     }
 }
