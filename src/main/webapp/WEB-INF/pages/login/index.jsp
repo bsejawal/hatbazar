@@ -1,12 +1,11 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<div class="container">
-    <form:form class="form-signin">
+<meta name="decorator" content="login"/>
+<jsp:include page="../layouts/flashMessage.jsp" flush="true" />
+<div class="container"><br/><br/><br/><br/><br/><br/>
+    <form class="form-signin" action="/login/authenticate" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <form:input path="username" type="text" placeholder="Email address" class="input-block-level" />
-        <form:password path="password" placeholder="Password" class="input-block-level" />
-        <label class="checkbox">
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button type="submit" class="btn btn-large btn-primary">Sign in</button>
-    </form:form>
+        <input type="text" name="username" class="input-block-level" placeholder="Username" />
+        <input type="password" name="password" class="input-block-level" placeholder="Password" />
+        <input class="btn btn-large btn-primary" type="submit" value="Sign in" />
+    </form>
+
 </div>

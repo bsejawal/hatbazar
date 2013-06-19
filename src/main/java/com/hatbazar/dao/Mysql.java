@@ -54,7 +54,7 @@ public class Mysql {
         } catch (SQLException e) {
             System.err.println("Error while Executing query :"+e.getMessage());
         }finally {
-            close();
+//            close();
         }
         return resultSet != null ? resultSet : null;
     }
@@ -66,7 +66,7 @@ public class Mysql {
         catch(SQLException e){
             System.err.println("Error while executeUpdate "+e.getMessage());
         }finally {
-            close();
+//            close();
         }
         return result==0? false :true;
     }

@@ -31,35 +31,17 @@ public class UserDao extends Mysql implements DAO {
     }
 
     @Override
-    public User getUser(Integer id) {
+    public User getUser(Integer id) throws InstantiationException, IllegalAccessException {
         String sql = "SELECT * FROM user WHERE id = ?";
-        Connection conn = null;
+        PreparedStatement ps;
         try {
-//            conn = dataSource.getConnection();
-            PreparedStatement ps = conn.prepareStatement(sql);
+            ps = conn.prepareStatement(sql);
             ps.setInt(1, id);
-            User user = new User();
-            ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
-                user.setName(rs.getString("name"));
-                user.setAddress(rs.getString("address"));
-                user.setEmail(rs.getString("email"));
-                user.setPhone(rs.getString("phone"));
-                user.setUsername(rs.getString("username"));
-                user.setPassword(rs.getString("password"));
-            }
-            rs.close();
-            ps.close();
-            return user;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {}
-            }
+            return setSingleRow(find(ps));
+        }catch (SQLException e){
+            e.printStackTrace();
         }
+        return null;
     }
 
     @Override
@@ -77,7 +59,7 @@ public class UserDao extends Mysql implements DAO {
         //To change body of implemented methods use File | Settings | File Templates.
     }
     public User authenticate(User user) throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "SELECT * FROM `user` WHERE `username`=? AND `password`=? LIMIT 1";
+        String sql = "SELECT * FROM `user` WHERE `username`=? AND `password`=MD5(?) LIMIT 1";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setString(1,user.getUsername());
         ps.setString(2,user.getPassword());

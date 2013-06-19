@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.sql.SQLException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,17 +30,26 @@ public class LoginController {
 
 
     @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView index() {
-        return new ModelAndView("login/index", "command", new User());
+    public String index() {
+        return "login/index";
     }
 
-    @RequestMapping(value = "/authencate", method = RequestMethod.POST)
-    public String authencate(@ModelAttribute("SpringWeb")User user,
-                             ModelMap model) throws IllegalAccessException, InstantiationException {
-        model.addAttribute("username", user.getUsername());
-        model.addAttribute("password", user.getPassword());
-        model.addAttribute("message", "User form parameter :::: ");
-        userService.authencate(user);
-        return "login/profile";
+    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
+    public String authenticate(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) {
+        User user = new User();
+        user.setPassword(request.getParameter("password").toString());
+        user.setUsername(request.getParameter("username").toString());
+        try {
+            if (userService.authenticate(user, request)){
+               return "redirect:/login/profile";
+            }else {
+                attributes.addFlashAttribute("error","The credentials you provided cannot be determined to be authentic.");
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        return "redirect:login";
     }
+
 }
