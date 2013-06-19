@@ -38,9 +38,9 @@
                     </li>
                 </ul>
                 <form class="navbar-form pull-right">
-                    <input type="text" placeholder="Email" class="span2">
-                    <input type="password" placeholder="Password" class="span2">
-                    <button class="btn" type="submit">Sign in</button>
+                    <i class="icon-search"></i>
+                    <input type="search" placeholder="Search" class="span2">
+                    <button class="btn" type="submit">OK</button>
                 </form>
             </div><!--/.nav-collapse -->
         </div>

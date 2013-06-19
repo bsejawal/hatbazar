@@ -1,24 +1,12 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<div class="login">
-    <fieldset>
-        <lagend>Secure Login System</lagend>
-        <form:form method="post" action="login/authencate">
-        <table>
-            <tr>
-                <td><form:label path="username">Username</form:label></td>
-                <td><form:input path="username" /></td>
-            </tr>
-
-            <tr>
-                <td><form:label path="password">Password</form:label></td>
-                <td><form:password path="password" /></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Login"/>
-                </td>
-            </tr>
-        </table>
-        </form:form>
-    </fieldset>
+<div class="container">
+    <form:form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <form:input path="username" type="text" placeholder="Email address" class="input-block-level" />
+        <form:password path="password" placeholder="Password" class="input-block-level" />
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button type="submit" class="btn btn-large btn-primary">Sign in</button>
+    </form:form>
 </div>
