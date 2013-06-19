@@ -2,11 +2,686 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.js" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\jquery-1.8.3.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\1_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\1_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\2_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\2_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\3_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\3_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\4_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\4_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\5_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\5_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\ajax.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\iframe.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\demo\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\lib\jquery-1.9.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\lib\jquery.mousewheel-3.0.6.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\fancybox_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\fancybox_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\fancybox_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\fancybox_buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\jquery.fancybox-buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\jquery.fancybox-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\jquery.fancybox-media.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\jquery.fancybox-thumbs.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\helpers\jquery.fancybox-thumbs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\jquery.fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\jquery.fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\fancyapps-fancyBox-0ffc358\source\jquery.fancybox.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\images\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\jquery-ui-1.10.3.custom.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\css\ui-lightness\jquery-ui-1.10.3.custom.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\custom-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\fillspace.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\hoverintent.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\no-auto-height.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\accordion\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\categories.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\combobox.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\custom-data.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\folding.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\images\jquery_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\images\transparent_1x1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\london.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\maxheight.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\multiple-remote.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\remote-jsonp.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\remote-with-cache.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\remote.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\search.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\autocomplete\xml.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\icons.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\radio.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\splitbutton.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\button\toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\alt-field.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\animation.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\buttonbar.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\date-formats.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\date-range.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\dropdown-month-year.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\icon-trigger.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\images\calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\inline.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\localization.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\min-max.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\multiple-calendars.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\other-months.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\datepicker\show-week.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\demos.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\animated.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\modal-confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\modal-form.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\modal-message.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\dialog\modal.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\constrain-movement.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\cursor-style.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\events.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\handle.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\revert.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\snap-to.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\draggable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\accepted-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras2_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras3_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras4_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\images\high_tatras_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\photo-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\propagation.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\revert.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\shopping-cart.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\droppable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\effect\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\effect\easing.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\effect\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\demo-config-on-tile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\demo-config-on.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\demo-spindown-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\demo-spindown-open.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\icon-docs-info.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\images\pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\menu\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\menu\icons.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\menu\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\cycler.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\images\earth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\images\flight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\images\rocket.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\position\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\progressbar\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\progressbar\images\pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\progressbar\indeterminate.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\progressbar\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\progressbar\label.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\animate.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\aspect-ratio.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\constrain-area.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\helper.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\max-min.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\snap-to-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\synchronous-resize.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\textarea.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\resizable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\selectable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\selectable\display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\selectable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\selectable\serialize.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\colorpicker.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\hotelrooms.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\multiple-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\range-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\range.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\rangemax.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\rangemin.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\side-scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\slider-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\slider\steps.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\connect-lists-through-tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\connect-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\empty-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\items.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\placeholder.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\sortable\portlets.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\currency.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\decimal.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\latlong.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\overflow.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\spinner\time.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\ajax\content1.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\ajax\content2.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\ajax\content3-slow.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\ajax\content4-broken.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\bottom.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\manipulation.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\mouseover.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tabs\vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\ajax\content1.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\ajax\content2.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\custom-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\custom-content.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\custom-style.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\forms.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\images\st-stephens.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\images\tower-bridge.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\tracking.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\tooltip\video-player.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\widget\default.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\demos\widget\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\autocomplete.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\blind-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\bounce-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\button.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\clip-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\draggable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\drop-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\droppable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\explode-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\fade-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\fold-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\highlight-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\jQuery.widget.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\menu.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\mouse.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\position.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\puff-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\pulsate-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\resizable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\scale-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\selectable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\shake-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\size-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\slide-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\slider.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\spinner.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\docs\transfer-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\globalize.culture.de-DE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\globalize.culture.ja-JP.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\globalize.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\jshint.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\external\qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\jquery-1.9.1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\package.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\base\minified\jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\images\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\themes\ui-lightness\minified\jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.accordion.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.autocomplete.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.button.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.core.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.datepicker.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.dialog.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.draggable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.droppable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-blind.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-bounce.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-clip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-drop.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-explode.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-fade.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-fold.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-highlight.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-pulsate.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-scale.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-shake.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-slide.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect-transfer.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.effect.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.menu.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.mouse.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.position.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.progressbar.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.resizable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.selectable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.slider.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.sortable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.spinner.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.tabs.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.tooltip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui.widget.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery-ui-i18n.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-be.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ka.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-km.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ky.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery-ui.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.button.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.core.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.draggable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.droppable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-blind.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-clip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-drop.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-explode.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-fade.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-pulsate.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-scale.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-shake.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-slide.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect-transfer.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.effect.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.menu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.mouse.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.position.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.resizable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.selectable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.spinner.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.widget.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-af.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-az.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-be.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-bg.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-bs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ca.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-cs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-cy-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-da.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-de.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-el.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-eo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-es.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-et.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-eu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fa.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-gl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-he.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-id.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-is.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-it.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ka.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-kk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-km.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ko.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-mk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ml.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ms.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nl-BE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-no.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-rm.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ru.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ta.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-th.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-tj.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-tr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-uk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-vi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery-ui.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.draggable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.droppable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-blind.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-bounce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-clip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-drop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-explode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-fade.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-fold.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-highlight.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-pulsate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-scale.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-shake.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-slide.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect-transfer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.effect.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.mouse.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.position.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.progressbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.resizable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.selectable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.sortable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.spinner.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\development-bundle\ui\minified\jquery.ui.widget.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\js\jquery-1.9.1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\js\jquery-ui-1.10.3.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\plugins\jquery-ui-1.10.3.custom\js\jquery-ui-1.10.3.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\githubpro\hatbazar\src\main\webapp\js\scripts.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/_resources.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/_resources.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hatbazar.iml" afterPath="$PROJECT_DIR$/hatbazar.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hatbazar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371585535638" ignored="false" />
+    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371612120266" ignored="false" />
     <file path="/fragment.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371495317590" ignored="false" />
     <file path="/User.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369798263818" ignored="false" />
     <file path="/IndexController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369798780157" ignored="false" />
@@ -14,15 +689,15 @@
     <file path="/mvc-dispatcher-servlet.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371574852422" ignored="false" />
     <file path="/Data Source" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371524648349" ignored="false" />
     <file path="/database_scripts.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369966199962" ignored="false" />
-    <file path="/welcome.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371093734933" ignored="false" />
+    <file path="/welcome.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371616011579" ignored="false" />
     <file path="/dummy.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369966273830" ignored="false" />
     <file path="/a.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369966273830" ignored="false" />
-    <file path="/_resources.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370313161737" ignored="false" />
-    <file path="/web.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371005517599" ignored="false" />
+    <file path="/_resources.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371611505811" ignored="false" />
+    <file path="/web.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371607933288" ignored="false" />
     <file path="/a.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370315585803" ignored="false" />
     <file path="/decorators.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370315846592" ignored="false" />
     <file path="/sitemesh.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369970690126" ignored="false" />
-    <file path="/main.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370231803687" ignored="false" />
+    <file path="/main.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371615670839" ignored="false" />
     <file path="$USER_HOME$/Desktop/untitled/untitled.iml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370315548645" ignored="false" />
     <file path="/SessionInterceptor.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370317701694" ignored="false" />
     <file path="/LoginController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371527849010" ignored="false" />
@@ -39,6 +714,7 @@
     <file path="/profile.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371499853091" ignored="false" />
     <file path="/DataSource.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371583673629" ignored="false" />
     <file path="/DAO.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371583391469" ignored="false" />
+    <file path="/test.css" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371608248905" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +734,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -95,6 +770,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -107,67 +783,81 @@
       <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="55" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
+            <state line="11" column="54" selection-start="845" selection-end="860" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mysql.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="33" column="57" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="28" selection-start="2670" selection-end="2670" vertical-scroll-proportion="0.24624625">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="11" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java">
+      <file leaf-file-name="decorators.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="303" selection-end="311" vertical-scroll-proportion="0.0">
+            <state line="2" column="34" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java">
+      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+            <state line="2" column="9" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="_resources.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/_resources.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="57" selection-start="2869" selection-end="2869" vertical-scroll-proportion="0.0">
+            <state line="1" column="19" selection-start="101" selection-end="101" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="4.576923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="24" selection-start="194" selection-end="194" vertical-scroll-proportion="0.27687296">
               <folding />
             </state>
           </provider>
@@ -192,13 +882,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/JdbcUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/interfaces/UserDao.java" />
         <option value="db-console:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/" />
         <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/DataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java" />
@@ -208,6 +891,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/LoginController.java" />
         <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/hatbazar..user" />
         <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/_resources.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/jquery.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp" />
       </list>
     </option>
   </component>
@@ -338,24 +1028,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: mysql:mysql-connector-java:5.1.15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql-connector-java-5.1.15.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hatbazar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="hatbazar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -397,6 +1069,138 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,6 +1231,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,7 +1396,13 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\githubpro\hatbazar\src\main\webapp\WEB-INF\lib" />
+      <recent name="D:\githubpro\hatbazar\src\main\webapp\css" />
+      <recent name="D:\githubpro\hatbazar\src\main\webapp\_\js" />
+      <recent name="D:\githubpro\hatbazar\src\main\webapp" />
       <recent name="D:\githubpro\hatbazar\src\main\webapp\js\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\githubpro\hatbazar\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.01">
@@ -700,7 +1536,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="false" name="Tomcat 7.01" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+    <configuration default="false" name="Tomcat 6.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="hatbazar:war">
@@ -710,7 +1546,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_hatbazar_3" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_hatbazar_4" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -720,7 +1556,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50797" />
+        <option name="DEBUG_PORT" value="52788" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -776,9 +1612,86 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Tomcat 7.01" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.01">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="hatbazar:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_hatbazar_5" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53107" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="hatbazar:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AppTests" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.01" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 6.0" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.01" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -846,18 +1759,21 @@
       <created>1371585540540</created>
       <updated>1371585540540</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="database connection implementation">
+      <created>1371585569717</created>
+      <updated>1371585569717</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270548" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270548" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.095454544" sideWeight="0.6729452" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -866,7 +1782,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6712329" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.14212328" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -874,12 +1790,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5273973" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28257576" sideWeight="0.6729452" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28257576" sideWeight="0.6729452" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7808219" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48630136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -952,40 +1869,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.0.RELEASE/spring-beans-3.2.0.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="11" selection-start="7014" selection-end="7014" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/META-INF/spring-form.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2244" column="4" selection-start="70377" selection-end="70377" vertical-scroll-proportion="0.33211008">
+        <state line="2" column="34" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="81" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="19" selection-start="33" selection-end="33" vertical-scroll-proportion="0.033464566" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="86" selection-start="3311" selection-end="3311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="303" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="19" selection-start="303" selection-end="311" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.16/mysql-connector-java-5.1.16.pom">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/profile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="4" column="24" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -995,77 +1928,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/interfaces/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="327" selection-end="327" vertical-scroll-proportion="0.3482309">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="55" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
+        <state line="11" column="54" selection-start="845" selection-end="860" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="11" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+        <state line="2" column="34" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/hatbazar..user">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="57" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="33" selection-end="33" vertical-scroll-proportion="0.033464566">
-          <folding />
-        </state>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
+        <state line="2" column="9" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="28" selection-start="2670" selection-end="2670" vertical-scroll-proportion="0.24624625">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="20" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/_resources.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="19" selection-start="101" selection-end="101" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="194" selection-end="194" vertical-scroll-proportion="0.27687296">
+          <folding />
         </state>
       </provider>
     </entry>

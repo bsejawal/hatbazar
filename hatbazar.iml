@@ -55,6 +55,7 @@
     <orderEntry type="library" name="spring-jdbc-3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" name="spring-dao-1.0.2" level="project" />
+    <orderEntry type="library" name="servlet-api" level="project" />
   </component>
 </module>
 
