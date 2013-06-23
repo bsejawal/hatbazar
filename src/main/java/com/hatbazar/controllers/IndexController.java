@@ -17,7 +17,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class IndexController {
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap model) {
-        model.addAttribute("message", "Welcome to Hatbazar Systam!");
+//        model.addAttribute("message", "Welcome to Hatbazar Systam!");
         return "index/welcome";
+    }
+    @RequestMapping(value = "/contact")
+    public String contact(ModelMap model){
+        return "index/contact";
+    }
+    @RequestMapping(value = "/about")
+    public String about(ModelMap model){
+        return "index/about";
     }
 }

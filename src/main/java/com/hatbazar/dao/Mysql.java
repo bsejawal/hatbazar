@@ -7,11 +7,7 @@ package com.hatbazar.dao;
  * Time: 12:58 AM
  * To change this template use File | Settings | File Templates.
  */
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Mysql {
     private static final String DB_PORT="3306"; // database port no eg mysql port : 3306
@@ -66,7 +62,7 @@ public class Mysql {
         catch(SQLException e){
             System.err.println("Error while executeUpdate "+e.getMessage());
         }finally {
-//            close();
+            close();
         }
         return result==0? false :true;
     }

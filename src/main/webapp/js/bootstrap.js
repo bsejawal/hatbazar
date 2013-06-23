@@ -1684,7 +1684,7 @@
   })
 
 }(window.jQuery);/* ========================================================
- * bootstrap-tab.js v2.3.2
+ * bootstrap-tabs.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#tabs
  * ========================================================
  * Copyright 2012 Twitter, Inc.

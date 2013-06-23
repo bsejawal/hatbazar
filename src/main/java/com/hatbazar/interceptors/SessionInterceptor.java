@@ -18,13 +18,13 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if(request.getRequestURL().toString().endsWith("/user")){
+        if(request.getRequestURL().toString().contains("/user")){
             if (request.getSession().getAttribute("isLogin")==null || !request.getSession().getAttribute("isLogin").toString().equals("true")){
-                response.sendRedirect("login");
+                response.sendRedirect("/login");
                 return true;
             }
         }
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return true;
     }
 
     @Override

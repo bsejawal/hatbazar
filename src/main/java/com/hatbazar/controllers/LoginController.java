@@ -36,20 +36,19 @@ public class LoginController {
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public String authenticate(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) {
-        User user = new User();
-        user.setPassword(request.getParameter("password").toString());
-        user.setUsername(request.getParameter("username").toString());
-        try {
-            if (userService.authenticate(user, request)){
-               return "redirect:/login/profile";
-            }else {
-                attributes.addFlashAttribute("error","The credentials you provided cannot be determined to be authentic.");
-                return "redirect:/login";
-            }
+       try {
+            if (userService.authenticate(request, attributes))return "redirect:/user";
         } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
-        return "redirect:login";
+        return "redirect:/login";
+    }
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public String logout(RedirectAttributes attributes,HttpServletRequest request){
+        request.getSession().setAttribute("isLogin",null);
+        request.getSession().setAttribute("userId",null);
+        attributes.addFlashAttribute("message","You have successfully logged out from this application");
+        return "redirect:/login";
     }
 
 }

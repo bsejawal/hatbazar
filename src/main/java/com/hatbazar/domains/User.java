@@ -8,11 +8,12 @@ package com.hatbazar.domains;
  * To change this template use File | Settings | File Templates.
  */
 public class User {
-    int id;
+    int id=0;
     String name;
     String address;
     String email;
     String phone;
+    String type;
     String username;
     String password;
 
@@ -50,6 +51,14 @@ public class User {
 
     public String getPhone() {
         return phone;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setPhone(String phone) {

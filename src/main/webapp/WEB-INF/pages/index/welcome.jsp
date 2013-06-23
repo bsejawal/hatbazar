@@ -1,27 +1,7 @@
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span3">
-            <div class="well sidebar-nav">
-                <ul class="nav nav-list">
-                    <li class="nav-header">Sidebar</li>
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="nav-header">Sidebar</li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="nav-header">Sidebar</li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </div><!--/.well -->
-        </div><!--/span-->
+        <jsp:include page="leftInfo.jsp" flush="true"/>
+        <!--/span-->
         <div class="span9">
             <div class="hero-unit">
                 <h1>Welcome to Haatbazar!</h1>
@@ -66,11 +46,4 @@
             </div><!--/row-->
         </div><!--/span-->
     </div><!--/row-->
-
-    <hr>
-
-    <footer>
-        <p>&copy; Company 2013</p>
-    </footer>
-
 </div>

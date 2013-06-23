@@ -28,6 +28,7 @@
         <!--<property name="jtemp" ref="jdbcTemplate" />-->
     <!--</bean>-->
     <bean id="userService" class="com.hatbazar.services.UserService"></bean>
+    <bean id="contactService" class="com.hatbazar.services.ContactService"></bean>
 
     <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >-->
         <!--<property name="driverClassName" value="com.mysql.dao.Driver"/>-->
@@ -42,13 +43,13 @@
     <!--</bean>-->
 
     <!--<bean id="userService" class="com.hatbazar.services.UserService"></bean>-->
-    <!--<bean id="user" class="com.hatbazar.controllers.UserController"></bean>-->
+    <!--<bean id="contact" class="com.hatbazar.controllers.UserController"></bean>-->
 
-    <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/*" />-->
-            <!--<bean class="com.hatbazar.interceptors.SessionInterceptor" />-->
-        <!--</mvc:interceptor>-->
-    <!--</mvc:interceptors>-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/*" />
+            <bean class="com.hatbazar.interceptors.SessionInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
     <mvc:annotation-driven/>
 </beans>
