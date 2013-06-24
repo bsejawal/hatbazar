@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 @RequestMapping("/contact")
 public class ContactController {
-    //Thank you for your e-mail.
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String save(HttpServletRequest request, HttpServletResponse response, RedirectAttributes attributes){
         attributes.addFlashAttribute("Thank you for you contact information will contact you soon..");

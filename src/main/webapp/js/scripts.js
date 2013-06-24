@@ -1,4 +1,4 @@
-function prepareForm(flag,id,el){
+function prepareUserForm(flag,id,el){
     clearForm();
     if(flag=='new'){
     $("#myModalLabel").text("Add New User");

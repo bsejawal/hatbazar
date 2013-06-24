@@ -22,7 +22,7 @@ public class ItemDao extends Mysql {
     }
     public boolean create(Item item) throws InstantiationException, IllegalAccessException {
         try {
-            PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `address`, `email`, `phone`,`type`,`itemname`, `password`) VALUES (?, ?, ?,?,?,?)");
+            PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `category`, `added_by`, `price`,`status`,`contact_person`,`contact_phone`,`details`) VALUES (?,?,?,?,?,?,?,?)");
             setPreparedStatement(item, ps);
             return affect(ps);
         } catch (SQLException e) {
@@ -59,10 +59,10 @@ public class ItemDao extends Mysql {
     }
 
     public boolean update(Item item) throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "UPDATE "+table+" SET `name`=?,`address`=?,`email`=?,`phone`=?,`type`=?,`itemname`=?,`password`=? WHERE `id`=? LIMIT 1";
+        String sql = "UPDATE "+table+" SET `name`=?,`category`=?,`added_by`=?,`price`=?,`status`=?,`contact_person`=?,`contact_phone`=?,`details`=? WHERE `id`=? LIMIT 1";
         PreparedStatement ps= conn.prepareStatement(sql);
         setPreparedStatement(item,ps);
-        ps.setInt(8,item.getId());
+        ps.setInt(9,item.getId());
         return affect(ps);
     }
 
@@ -83,15 +83,20 @@ public class ItemDao extends Mysql {
         item.setCategory(rs.getString("category"));
         item.setAddedBy(rs.getInt("added_by"));
         item.setPrice(rs.getDouble("price"));
-        item.setStatus(rs.getBoolean("status"));
+        item.setStatus(rs.getString("status"));
+        item.setContactPerson(rs.getString("contact_person"));
+        item.setContactPhone(rs.getString("contact_phone"));
+        item.setDetails(rs.getString("details"));
         return item;
     }
     private void setPreparedStatement(Item item, PreparedStatement ps) throws SQLException {
         ps.setString(1, item.getName());
-        ps.setString(2, item.getName());
-        ps.setString(3, item.getCategory());
-        ps.setInt(4, item.getAddedBy());
-        ps.setDouble(5, item.getPrice());
-        ps.setBoolean(6,item.isStatus());
+        ps.setString(2, item.getCategory());
+        ps.setInt(3, item.getAddedBy());
+        ps.setDouble(4, item.getPrice());
+        ps.setString(5,item.getStatus());
+        ps.setString(6,item.getContactPerson());
+        ps.setString(7,item.getContactPhone());
+        ps.setString(8,item.getDetails());
     }
 }

@@ -1,7 +1,7 @@
 <div class="span9">
     <div class="hero-unit">
         <h4 class="pull-left">Profile</h4>
-        <a href="#myModal" role="button" data-toggle="modal" class="pull-right icon-edit" onclick="prepareForm('profile','${user.id}',this)" title="Edit Your Profile"></a>
+        <a href="#myModal" role="button" data-toggle="modal" class="pull-right icon-edit" onclick="prepareUserForm('profile','${user.id}',this)" title="Edit Your Profile"></a>
         <table class="table table-striped">
             <tr><td>Name</td><td>:</td><td>${user.name}</td></tr>
             <tr><td>Address</td><td>:</td><td>${user.address}</td></tr>

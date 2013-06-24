@@ -26,7 +26,6 @@
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="item_ibfk_1" table="item" schema="" catalog="hatbazar" columns="category"/>
     </table>
     <table name="item" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -38,9 +37,8 @@
       <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="item_ibfk_1" columns="category" ref-table="category" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="item_ibfk_2" columns="added_by" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="item_request_ibfk_1" table="item_request" schema="" catalog="hatbazar" columns="item"/>
+      <index name="added_by" unique="false" columns="added_by"/>
     </table>
     <table name="item_request" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -50,13 +48,6 @@
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="item_request_ibfk_1" columns="item" ref-table="item" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="item_request_ibfk_2" columns="req_by" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-    </table>
-    <table name="role" schema="" catalog="hatbazar" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="role_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="user_role_ibfk_2" table="user_role" schema="" catalog="hatbazar" columns="role_id"/>
-      <index name="role_name" unique="true" columns="role_name"/>
     </table>
     <table name="user" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -70,16 +61,8 @@
       <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="item_ibfk_2" table="item" schema="" catalog="hatbazar" columns="added_by"/>
       <exported-key name="item_request_ibfk_2" table="item_request" schema="" catalog="hatbazar" columns="req_by"/>
-      <exported-key name="user_role_ibfk_1" table="user_role" schema="" catalog="hatbazar" columns="user_id"/>
       <index name="username" unique="true" columns="username"/>
-    </table>
-    <table name="user_role" schema="" catalog="hatbazar" type="TABLE">
-      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="role_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <foreign-key name="user_role_ibfk_1" columns="user_id" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="user_role_ibfk_2" columns="role_id" ref-table="role" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="CHARACTER_SETS" schema="" catalog="information_schema" type="SYSTEM TABLE">
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" def="Jyc="/>

@@ -28,6 +28,7 @@
         <!--<property name="jtemp" ref="jdbcTemplate" />-->
     <!--</bean>-->
     <bean id="userService" class="com.hatbazar.services.UserService"></bean>
+    <bean id="itemService" class="com.hatbazar.services.ItemService"></bean>
     <bean id="contactService" class="com.hatbazar.services.ContactService"></bean>
 
     <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >-->

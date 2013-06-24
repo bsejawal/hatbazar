@@ -49,8 +49,6 @@ public class Mysql {
             resultSet = preparedStatement.executeQuery();
         } catch (SQLException e) {
             System.err.println("Error while Executing query :"+e.getMessage());
-        }finally {
-//            close();
         }
         return resultSet != null ? resultSet : null;
     }

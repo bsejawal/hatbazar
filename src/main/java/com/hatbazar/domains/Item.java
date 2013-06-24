@@ -8,12 +8,15 @@ package com.hatbazar.domains;
  * To change this template use File | Settings | File Templates.
  */
 public class Item {
-    int id;
+    int id=0;
     String name;
     String category;
     int addedBy; // User who added this item
-    double price;
-    boolean status;
+    double price=0;
+    String status;
+    String contactPerson;
+    String contactPhone;
+    String details;
 
 
     public String getName() {
@@ -56,11 +59,35 @@ public class Item {
         this.price = price;
     }
 
-    public boolean isStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getContactPerson() {
+        return contactPerson;
+    }
+
+    public void setContactPerson(String contactPerson) {
+        this.contactPerson = contactPerson;
+    }
+
+    public String getContactPhone() {
+        return contactPhone;
+    }
+
+    public void setContactPhone(String contactPhone) {
+        this.contactPhone = contactPhone;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
     }
 }
