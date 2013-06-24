@@ -29,6 +29,7 @@
                    <c:choose>
                        <c:when test="${isLogin}">
                            <li><a href="/user">Admin Pannel</a></li>
+                           <li><a href="/item">Manage Items</a></li>
                            <li><a href="/login/logout">Logout</a></li>
                        </c:when>
                        <c:otherwise><li><a href="/login">Login</a></li></c:otherwise>

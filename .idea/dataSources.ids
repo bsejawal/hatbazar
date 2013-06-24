@@ -35,6 +35,8 @@
       <column name="added_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="price" sqlType="DECIMAL" length="10" precision="0" nullable="false" jdbcType="3"/>
       <column name="status" sqlType="BIT" length="0" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="item_ibfk_1" columns="category" ref-table="category" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="item_ibfk_2" columns="added_by" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>

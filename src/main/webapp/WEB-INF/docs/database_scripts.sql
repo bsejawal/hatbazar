@@ -27,3 +27,14 @@ CREATE TABLE `user_role` (`user_id` INT NOT NULL, `role_id` INT NOT NULL,
 
 INSERT INTO `role`(`role_name`)VALUES ('USER_ADMIN'),('USER_NORMAL');
 INSERT INTO `user_role`(`user_id`,`role_id`)VALUES ((SELECT `id` FROM `user` WHERE `name` LIKE '%Bhesh%' AND `address` LIKE '%Dhapasi%' LIMIT 1),(SELECT `id` FROM `role` WHERE `role_name` LIKE '%ADMIN%' LIMIT 1));
+
+ALTER TABLE `item` ADD COLUMN `created_on` TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+ALTER TABLE `item` ADD COLUMN `changed_on` TIMESTAMP DEFAULT 0;
+
+
+DROP TRIGGER IF EXISTS `update_item_trigger`;
+DELIMITER //
+CREATE TRIGGER `update_item_trigger` BEFORE UPDATE ON `item`
+FOR EACH ROW SET NEW.`changed_on`=NOW()
+//
+DELIMITER;
