@@ -27,13 +27,14 @@
       <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
       <column name="category" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
       <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
-      <column name="price" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3"/>
+      <column name="price" sqlType="DOUBLE" length="22" precision="0" nullable="true" jdbcType="8"/>
       <column name="status" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
       <column name="contact_person" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
       <column name="contact_phone" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
       <column name="details" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
       <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="reserved_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="item_request_ibfk_1" table="item_request" schema="" catalog="hatbazar" columns="item"/>
     </table>

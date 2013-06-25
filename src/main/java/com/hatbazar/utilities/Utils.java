@@ -1,5 +1,6 @@
 package com.hatbazar.utilities;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -59,6 +60,12 @@ public class Utils {
                 return false;
             }
         }
+        return true;
+    }
+
+    public static boolean isLogin(HttpServletRequest request){
+        if(request.getSession().getAttribute("isLogin")==null) return false;
+        if((Boolean)request.getSession().getAttribute("isLogin")==false) return false;
         return true;
     }
 }

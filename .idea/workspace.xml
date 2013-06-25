@@ -2,41 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_available.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_reserved.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/IndexController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/Item.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/interceptors/SessionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/interceptors/SessionInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/about.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/about.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/docs/database_scripts.sql" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/docs/database_scripts.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/footer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/form.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/loginLayout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/loginLayout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\githubpro\hatbazar\src\main\webapp\WEB-INF\pages\item\list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_yourItems.jsp" />
     </list>
     <ignored path="hatbazar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372154999725" ignored="false" />
+    <file path="/Dummy.txt" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372171036574" ignored="false" />
     <file path="/fragment.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371922422552" ignored="false" />
     <file path="/User.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372104696365" ignored="false" />
-    <file path="/IndexController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371884394458" ignored="false" />
+    <file path="/IndexController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372176518722" ignored="false" />
     <file path="/pom.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371489355914" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372044369803" ignored="false" />
-    <file path="/Data Source" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372150899691" ignored="false" />
+    <file path="/Data Source" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190243184" ignored="false" />
     <file path="/database_scripts.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369966199962" ignored="false" />
-    <file path="/welcome.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372088624715" ignored="false" />
+    <file path="/welcome.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372185522314" ignored="false" />
     <file path="/dummy.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371824283881" ignored="false" />
     <file path="/a.sql" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371824289030" ignored="false" />
     <file path="/_resources.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371968655152" ignored="false" />
@@ -46,10 +44,10 @@
     <file path="/sitemesh.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1369970690126" ignored="false" />
     <file path="/main.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372089058884" ignored="false" />
     <file path="$USER_HOME$/Desktop/untitled/untitled.iml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1370315548645" ignored="false" />
-    <file path="/SessionInterceptor.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371883943513" ignored="false" />
+    <file path="/SessionInterceptor.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190819282" ignored="false" />
     <file path="/LoginController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371973510614" ignored="false" />
-    <file path="/index.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372044193134" ignored="false" />
-    <file path="/UserService.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372107760650" ignored="false" />
+    <file path="/index.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372193306553" ignored="false" />
+    <file path="/UserService.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190778037" ignored="false" />
     <file path="/UserController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372007393899" ignored="false" />
     <file path="/a.dummy" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371888793094" ignored="false" />
     <file path="/UserDao.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372104740305" ignored="false" />
@@ -57,7 +55,7 @@
     <file path="/UMapper.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371495246893" ignored="false" />
     <file path="/UserJDBCTemplate.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371497522895" ignored="false" />
     <file path="/JdbcUserDAO.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371572722964" ignored="false" />
-    <file path="/Utils.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371920337048" ignored="false" />
+    <file path="/Utils.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190728783" ignored="false" />
     <file path="/profile.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372010032177" ignored="false" />
     <file path="/DataSource.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371583673629" ignored="false" />
     <file path="/DAO.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371888229860" ignored="false" />
@@ -68,24 +66,28 @@
     <file path="/about.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372089157552" ignored="false" />
     <file path="/bootstrap.min.css" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371885060001" ignored="false" />
     <file path="/footer.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372094824801" ignored="false" />
-    <file path="/style.css" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372086690727" ignored="false" />
+    <file path="/style.css" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372185485863" ignored="false" />
     <file path="/ContactController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371887507908" ignored="false" />
     <file path="/Contact.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371889021426" ignored="false" />
     <file path="/ContactDao.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372047315638" ignored="false" />
-    <file path="/form.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372100539901" ignored="false" />
+    <file path="/form.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372185730227" ignored="false" />
     <file path="$USER_HOME$/Desktop/csstest/.idea/workspace.xml" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371894442236" ignored="false" />
     <file path="$USER_HOME$/Desktop/csstest/index.html" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371893726349" ignored="false" />
     <file path="/index.html" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371893706026" ignored="false" />
     <file path="/Role.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371898316435" ignored="false" />
     <file path="/UserRole.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371898398178" ignored="false" />
-    <file path="/list.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372044073051" ignored="false" />
-    <file path="/scripts.js" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372098658719" ignored="false" />
+    <file path="/list.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372174508919" ignored="false" />
+    <file path="/scripts.js" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372195700219" ignored="false" />
     <file path="/Mysql.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1371976123645" ignored="false" />
-    <file path="/ItemController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372105815801" ignored="false" />
-    <file path="/Item.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372091138565" ignored="false" />
-    <file path="/ItemDao.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372105587739" ignored="false" />
-    <file path="/ItemService.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372105601363" ignored="false" />
+    <file path="/ItemController.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190376979" ignored="false" />
+    <file path="/Item.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372190300428" ignored="false" />
+    <file path="/ItemDao.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372195533292" ignored="false" />
+    <file path="/ItemService.java" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372192050650" ignored="false" />
     <file path="/header.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372088804973" ignored="false" />
+    <file path="/_otherList.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372187189543" ignored="false" />
+    <file path="/_reserved.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372193464463" ignored="false" />
+    <file path="/_yourItems.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372192719405" ignored="false" />
+    <file path="/_available.jsp" changelist="83f766ec-c0ab-47a3-8a24-23e2bc4a1a49" time="1372195371656" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,56 +153,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ItemDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java">
+      <file leaf-file-name="ItemController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="23" selection-start="3030" selection-end="3040" vertical-scroll-proportion="0.0">
+            <state line="34" column="62" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-13.6">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/list.jsp">
+      <file leaf-file-name="scripts.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="100" column="75" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.49804688">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/domains/Item.java">
+      <file leaf-file-name="form.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="58" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+            <state line="1" column="56" selection-start="169" selection-end="177" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="49" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0">
+            <state line="7" column="34" selection-start="184" selection-end="193" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/header.jsp">
+      <file leaf-file-name="_available.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_available.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="178" selection-end="178" vertical-scroll-proportion="0.238">
+            <state line="10" column="48" selection-start="399" selection-end="399" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/UserController.java">
+      <file leaf-file-name="_reserved.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_reserved.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="23" column="53" selection-start="917" selection-end="917" vertical-scroll-proportion="-13.615385">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="20" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,16 +221,25 @@
       <file leaf-file-name="ItemService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="26" selection-start="5016" selection-end="5016" vertical-scroll-proportion="0.0">
+            <state line="86" column="39" selection-start="5124" selection-end="5124" vertical-scroll-proportion="-7.32">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mysql.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java">
+      <file leaf-file-name="ItemDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="28" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+            <state line="140" column="87" selection-start="5638" selection-end="5638" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="60" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,22 +264,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/scripts.js" />
-        <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/hatbazar..item" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java" />
-        <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/library..book" />
-        <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/library..category" />
-        <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/library..issue_book" />
-        <option value="dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/library..user" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_otherList.jsp" />
         <option value="db-console:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/domains/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/interceptors/SessionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_yourItems.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_reserved.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_available.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -369,8 +391,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -523,7 +545,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -617,11 +639,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,6 +662,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hatbazar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -732,34 +776,8 @@
               <option name="myItemId" value="hatbazar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hatbazar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hatbazar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hatbazar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domains" />
+              <option name="myItemId" value="interceptors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,10 +804,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hatbazar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -840,7 +854,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="Database.TableEditor.Splitter" value="0.8999999" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -853,10 +867,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\githubpro\hatbazar\src\main\webapp\css" />
       <recent name="D:\githubpro\hatbazar\src\main\webapp\js" />
       <recent name="D:\githubpro\hatbazar\src\main\webapp" />
       <recent name="D:\githubpro\hatbazar\src\main\webapp\WEB-INF\lib" />
-      <recent name="D:\githubpro\hatbazar\src\main\webapp\css" />
       <recent name="D:\githubpro\hatbazar\src\main\webapp\_\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -1278,7 +1292,11 @@
       <created>1372061750282</created>
       <updated>1372061750282</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="file added for item">
+      <created>1372155085388</created>
+      <updated>1372155085388</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1289,7 +1307,8 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21439394" sideWeight="0.75767916" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21439394" sideWeight="0.33732876" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1297,6 +1316,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32575756" sideWeight="0.6712329" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.14212328" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1304,14 +1324,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5273973" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.75767916" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47260273" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.33732876" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6626712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24232082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59246576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1388,113 +1406,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="49" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/hatbazar..user">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="103" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/Mysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="28" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://db-console:/12e1f0a9/72335e24-6a28-465a-9d7f-d65070459c44/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.67173254" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="23" selection-start="3030" selection-end="3040" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="26" selection-start="5016" selection-end="5016" vertical-scroll-proportion="0.0">
+        <state line="1" column="48" selection-start="58" selection-end="58" vertical-scroll-proportion="0.10493827">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/domains/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+        <state line="94" column="32" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/interceptors/SessionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+        <state line="23" column="28" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/domains/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="16" selection-start="1550" selection-end="1550" vertical-scroll-proportion="3.768262">
+        <state line="26" column="56" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="38" selection-start="1891" selection-end="1891" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_yourItems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="50" selection-start="1529" selection-end="1529" vertical-scroll-proportion="-16.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/utilities/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="20" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="73" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.30989584">
+        <state line="28" column="60" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="49" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0">
+        <state line="7" column="34" selection-start="184" selection-end="193" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/layouts/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_reserved.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="178" selection-end="178" vertical-scroll-proportion="0.238">
+        <state line="23" column="53" selection-start="917" selection-end="917" vertical-scroll-proportion="-13.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="56" selection-start="169" selection-end="177" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item/_available.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="399" selection-end="399" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/controllers/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="62" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-13.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/services/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="39" selection-start="5124" selection-end="5124" vertical-scroll-proportion="-7.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hatbazar/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="87" selection-start="5638" selection-end="5638" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="75" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.49804688">
           <folding />
         </state>
       </provider>

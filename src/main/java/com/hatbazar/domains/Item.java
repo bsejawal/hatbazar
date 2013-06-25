@@ -17,6 +17,7 @@ public class Item {
     String contactPerson;
     String contactPhone;
     String details;
+    int reservedBy;
 
 
     public String getName() {
@@ -89,5 +90,13 @@ public class Item {
 
     public void setDetails(String details) {
         this.details = details;
+    }
+
+    public int getReservedBy() {
+        return reservedBy;
+    }
+
+    public void setReservedBy(int reservedBy) {
+        this.reservedBy = reservedBy;
     }
 }

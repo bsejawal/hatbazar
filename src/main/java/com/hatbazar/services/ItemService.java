@@ -2,7 +2,6 @@ package com.hatbazar.services;
 
 import com.hatbazar.dao.ItemDao;
 import com.hatbazar.domains.Item;
-import com.hatbazar.domains.User;
 import com.hatbazar.utilities.Utils;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,7 +27,6 @@ public class ItemService {
     public boolean save(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, UnsupportedEncodingException, NoSuchAlgorithmException, SQLException {
         Item item = itemInstance(request);
         if(isValid(item, request, attributes)){
-            System.out.println("ItemService.save isValid:true");
             ItemDao itemDao = new ItemDao();
             boolean flag = false;
             if(item.getId()==0)flag= itemDao.create(item);
@@ -63,7 +60,6 @@ public class ItemService {
         if(item.getStatus() == null || Utils.checkNull(item.getStatus())) msg += "<br />Status is required field";
         if(item.getContactPerson() == null || Utils.checkNull(item.getContactPerson())) msg += "<br />Contact Person is required field";
         if(item.getContactPhone() == null || Utils.checkNull(item.getContactPhone())) msg += "<br />Contact Phone is required field";
-        if(item.getDetails() == null || Utils.checkNull(item.getDetails())) msg += "<br />Details is required field";
         attributes.addFlashAttribute("error",msg);
         return msg=="";
     }
@@ -78,18 +74,47 @@ public class ItemService {
         if(itemDao.delete(id))attributes.addFlashAttribute("message","Data delete successfully");
         else attributes.addFlashAttribute("error","Item not exists, Refresh your browser properly");
     }
-    public List<Item> findByUserType(int id) throws IllegalAccessException, SQLException, InstantiationException {
-        User user = new UserService().get(id);
-        List<Item> list;
-        ItemDao itemDao = new ItemDao();
-        if(user.getType().equalsIgnoreCase("SUPER"))
-            list=itemDao.all();
-        else if (user.getType().equalsIgnoreCase("ADMIN"))
-                list=itemDao.findByAdmin(id);
-        else list = itemDao.findByUser(id);
-        return list;
-
-
+    public List<Item> getDefaultItems() throws InstantiationException, IllegalAccessException, SQLException {
+        return new ItemDao().getDefaultItems();
     }
+    public List<Item> getYourItems(int id) throws IllegalAccessException, SQLException, InstantiationException {
+        return new ItemDao().findByUser(id);
+    }
+    public List<Item> getAvailableItems(int id) throws InstantiationException, IllegalAccessException, SQLException {
+        return new ItemDao().getAvailableItems(id);
+    }
+    public List<Item> getReservedItems(int id) throws InstantiationException, IllegalAccessException, SQLException {
+        return new ItemDao().getReservedItems(id);
+    }
+    public boolean reserve(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
+        if (!Utils.isLogin(request)){
+            return false;
+        } else {
+            int userId = (Integer)request.getSession().getAttribute("userId");
+            int id = Integer.parseInt(request.getParameter("id"));
+            if(new ItemDao().reserve(userId, id)){
+                attributes.addFlashAttribute("message","Item Reserved successfully.");
+                attributes.addFlashAttribute("tab","reserved");
+                return true;
+            }
+            return false;
+        }
+    }
+
+    public boolean cancelReserved(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
+        if (!Utils.isLogin(request)){
+            return false;
+        } else {
+            int userId = (Integer)request.getSession().getAttribute("userId");
+            int id = Integer.parseInt(request.getParameter("id"));
+            if(new ItemDao().cancelReserved(id)){
+                attributes.addFlashAttribute("message","Reserved Item Cancel Successfully.");
+                attributes.addFlashAttribute("tab","your_list");
+                return true;
+            }
+            return false;
+        }
+    }
+
 
 }

@@ -26,7 +26,7 @@ public class UserService {
     }
     public boolean isLogin(User user, HttpServletRequest request){
         if(user.getId()!=0){
-            request.getSession().setAttribute("isLogin","true");
+            request.getSession().setAttribute("isLogin",true);
             request.getSession().setAttribute("userId",user.getId());
             request.getSession().setAttribute("userType",user.getType());
             return true;

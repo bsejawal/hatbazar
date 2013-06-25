@@ -21,7 +21,6 @@ public class ItemDao extends Mysql {
         this.connect();
     }
     public boolean create(Item item) throws InstantiationException, IllegalAccessException {
-        System.out.println("ItemDao.create");
         try {
             PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `category`, `added_by`, `price`,`status`,`contact_person`,`contact_phone`,`details`) VALUES (?,?,?,?,?,?,?,?)");
             setPreparedStatement(item, ps);
@@ -110,7 +109,7 @@ public class ItemDao extends Mysql {
         else return list;
     }
     public List<Item> findByUser(int id) throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "SELECT * FROM "+table+" WHERE `added_by`=?";
+        String sql = "SELECT * FROM "+table+" WHERE `added_by`=? ORDER BY `id` DESC";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setInt(1,id);
         List<Item> list = rows(find(ps));
@@ -118,4 +117,48 @@ public class ItemDao extends Mysql {
         if(list ==null)return null;
         else return list;
     }
+
+    public List<Item> getDefaultItems() throws SQLException, InstantiationException, IllegalAccessException {
+        String sql ="SELECT * FROM "+table+" WHERE `status`='ACTIVE' ORDER BY `id` DESC";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+
+    }
+    public List<Item> getAvailableItems(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql ="SELECT * FROM "+table+" WHERE `status`='ACTIVE' AND `added_by`<>? ORDER BY `id` DESC";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+
+    public List<Item> getReservedItems(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql ="SELECT * FROM "+table+" WHERE `status`='RESERVED' AND `reserved_by`=? ORDER BY `id` DESC";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+    public boolean reserve(int userId, int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "UPDATE "+table+" SET `status`=?,`reserved_by`=? WHERE `id`=? LIMIT 1";
+        PreparedStatement ps= conn.prepareStatement(sql);
+        ps.setString(1,"RESERVED");
+        ps.setInt(2,userId);
+        ps.setInt(3,id);
+        return affect(ps);
+    }
+    public boolean cancelReserved(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "UPDATE "+table+" SET `status`='ACTIVE',`reserved_by`=0 WHERE `id`=? LIMIT 1";
+        PreparedStatement ps= conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        return affect(ps);
+    }
+
 }

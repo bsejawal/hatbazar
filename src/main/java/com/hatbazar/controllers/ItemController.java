@@ -28,8 +28,11 @@ public class ItemController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(HttpServletRequest request) throws IllegalAccessException, SQLException, InstantiationException {
-        request.setAttribute("list",itemService.findByUserType((Integer)request.getSession().getAttribute("userId")));
-//        request.setAttribute("user",itemService.get(Integer.parseInt(request.getSession().getAttribute("userId").toString())));
+        if(request.getSession().getAttribute("userId")==null)return "redirect:/login";
+        int id =(Integer) request.getSession().getAttribute("userId");
+        request.setAttribute("yourList",itemService.getYourItems(id));
+        request.setAttribute("availableList",itemService.getAvailableItems(id));
+        request.setAttribute("reservedList",itemService.getReservedItems(id));
         return "item/index";
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -40,6 +43,17 @@ public class ItemController {
     @RequestMapping(value = "/delete")
     public String delete(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
         itemService.delete(request,attributes);
+        return "redirect:/item";
+    }
+
+    @RequestMapping(value = "/reserve")
+    public String reserve(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
+        itemService.reserve(request,attributes);
+        return "redirect:/item";
+    }
+    @RequestMapping(value = "/cancelReserved")
+    public String cancelReserved(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
+        itemService.cancelReserved(request,attributes);
         return "redirect:/item";
     }
 

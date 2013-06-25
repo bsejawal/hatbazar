@@ -3,12 +3,21 @@
         adminTab("${tab}");
     });
 </script>
+
 <ul class="nav nav-tabs" id="myTab">
-    <li class="active"><a id="tab-list" data-toggle="tab" href="#item_list">List</a></li>
+    <li class="active"><a id="tab-your_list" data-toggle="tab" href="#your_list">Your List</a></li>
+    <li><a id="tab-available" data-toggle="tab" href="#available">Available List</a></li>
+    <li><a id="tab-reserved" data-toggle="tab" href="#reserved">Reserved List</a></li>
 </ul>
 <div class="tab-content" id="myTabContent">
-    <div id="profile" class="tab-pane fade in active">
-        <p><jsp:include page="list.jsp" flush="true" /></p>
+    <div id="your_list" class="tab-pane fade in active">
+        <p><jsp:include page="_yourItems.jsp" flush="true" /></p>
+    </div>
+    <div id="available" class="tab-pane fade in">
+        <p><jsp:include page="_available.jsp" flush="true" /></p>
+    </div>
+    <div id="reserved" class="tab-pane fade in">
+        <p><jsp:include page="_reserved.jsp" flush="true" /></p>
     </div>
     <jsp:include page="form.jsp" flush="true" />
 </div>

@@ -13,7 +13,6 @@
     position: fixed;
     width: 100%;
     text-align: center;
-    border-top: 3px solid #a9a9a9;
 }
 .error-wrapper{ background: #fff; position: fixed; top:0; left: 0; width: 100%; z-index: 99999;}
 .error-box{ background: #fbb7b7 center; border: 2px solid #cc0000; color: #aa0000; }
@@ -67,3 +66,5 @@ li {
 input[type=radio] {
     margin-bottom: 5px;
 }
+
+.item-box{border: 2px solid #a9a9a9; margin: 5px; padding: 5px; border-radius: 7px;}
