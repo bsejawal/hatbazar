@@ -31,6 +31,19 @@ INSERT INTO `user_role`(`user_id`,`role_id`)VALUES ((SELECT `id` FROM `user` WHE
 ALTER TABLE `item` ADD COLUMN `created_on` TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE `item` ADD COLUMN `changed_on` TIMESTAMP DEFAULT 0;
 
+CREATE TABLE `item`(
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR (100),
+  `category` VARCHAR (100),
+  `added_by` INT,
+  `price` DECIMAL,
+  `status` tinyint(1),
+  `contactPerson` VARCHAR (100),
+  `contactPhone` VARCHAR (20),
+  `details` TEXT,
+  `created_on` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `changed_on` TIMESTAMP DEFAULT 0
+);
 
 DROP TRIGGER IF EXISTS `update_item_trigger`;
 DELIMITER //

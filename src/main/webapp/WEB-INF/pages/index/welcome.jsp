@@ -8,7 +8,6 @@
                 <p>The <strong>Haatbazar System</strong> is   a village based project. This project is related with requesting for bye goods and selling of goods on remote areas of Nepal. It helps to find every domestic selling and purchasing goods online. Where seller can put their goods for sale and buyer can easily search ,book available goods and go to the respective place for its purchase.
                     a village computer operator  will have access to this application. The person  will  explain about the items available in the application. People from different region will  contact the operator and operator will act as  a mediator between them.
                 </p>
-                <p><a class="btn btn-primary btn-large" href="#">Learn more &raquo;</a></p>
             </div>
             <div class="row-fluid">
                 <div class="span4">
@@ -46,4 +45,5 @@
             </div><!--/row-->
         </div><!--/span-->
     </div><!--/row-->
+    <br />
 </div>

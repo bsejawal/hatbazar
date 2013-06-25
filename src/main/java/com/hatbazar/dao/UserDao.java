@@ -14,8 +14,9 @@ public class UserDao extends Mysql {
         this.connect();
     }
     public boolean create(User user) throws InstantiationException, IllegalAccessException {
+        System.out.println("in userDAo :: create ::");
         try {
-            PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `address`, `email`, `phone`,`type`,`username`, `password`) VALUES (?, ?, ?,?,?,?)");
+            PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `address`, `email`, `phone`,`type`,`username`, `password`,`added_by`) VALUES (?,?,?,?,?,?,?,?)");
             setPreparedStatement(user, ps);
             return affect(ps);
         } catch (SQLException e) {
@@ -52,10 +53,10 @@ public class UserDao extends Mysql {
     }
 
     public boolean update(User user) throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "UPDATE "+table+" SET `name`=?,`address`=?,`email`=?,`phone`=?,`type`=?,`username`=?,`password`=? WHERE `id`=? LIMIT 1";
+        String sql = "UPDATE "+table+" SET `name`=?,`address`=?,`email`=?,`phone`=?,`type`=?,`username`=?,`password`=?,`added_by`=? WHERE `id`=? LIMIT 1";
         PreparedStatement ps= conn.prepareStatement(sql);
         setPreparedStatement(user,ps);
-        ps.setInt(8,user.getId());
+        ps.setInt(9,user.getId());
         return affect(ps);
     }
     public User authenticate(User user) throws SQLException, InstantiationException, IllegalAccessException {
@@ -89,6 +90,7 @@ public class UserDao extends Mysql {
         user.setType(rs.getString("type"));
         user.setUsername(rs.getString("username"));
         user.setPassword(rs.getString("password"));
+        user.setAddedBy(rs.getInt("added_by"));
         return user;
     }
     private void setPreparedStatement(User user, PreparedStatement ps) throws SQLException {
@@ -99,5 +101,6 @@ public class UserDao extends Mysql {
         ps.setString(5, user.getType());
         ps.setString(6, user.getUsername());
         ps.setString(7, user.getPassword());
+        ps.setInt(8, user.getAddedBy());
     }
 }

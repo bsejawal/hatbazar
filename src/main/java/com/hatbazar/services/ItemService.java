@@ -2,6 +2,7 @@ package com.hatbazar.services;
 
 import com.hatbazar.dao.ItemDao;
 import com.hatbazar.domains.Item;
+import com.hatbazar.domains.User;
 import com.hatbazar.utilities.Utils;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,6 +29,7 @@ public class ItemService {
     public boolean save(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, UnsupportedEncodingException, NoSuchAlgorithmException, SQLException {
         Item item = itemInstance(request);
         if(isValid(item, request, attributes)){
+            System.out.println("ItemService.save isValid:true");
             ItemDao itemDao = new ItemDao();
             boolean flag = false;
             if(item.getId()==0)flag= itemDao.create(item);
@@ -45,7 +48,7 @@ public class ItemService {
         }
         if(!Utils.checkNull(request.getParameter("name"))) item.setName(request.getParameter("name").trim());
         if(!Utils.checkNull(request.getParameter("category"))) item.setCategory(request.getParameter("category").trim());
-        if(!Utils.checkNull(request.getParameter("price"))) item.setPrice(Double.parseDouble(request.getParameter("type").trim()));
+        if(!Utils.checkNull(request.getParameter("price"))&& Utils.isNumeric(request.getParameter("price"))) item.setPrice(Double.parseDouble(request.getParameter("price").trim()));
         if(!Utils.checkNull(request.getParameter("status"))) item.setStatus(request.getParameter("status").trim());
         if(!Utils.checkNull(request.getParameter("contactPerson"))) item.setContactPerson(request.getParameter("contactPerson").trim());
         if(!Utils.checkNull(request.getParameter("contactPhone"))) item.setContactPhone(request.getParameter("contactPhone").trim());
@@ -56,7 +59,7 @@ public class ItemService {
         String msg = "";
         if(item.getName()==null || Utils.checkNull(item.getName())) msg += "Name is required field";
         if(item.getCategory() == null || Utils.checkNull(item.getCategory())) msg += "<br />Category is required field";
-        if(item.getPrice()==0) msg += "<br />Price Role is required field";
+        if(item.getPrice()==0) msg += "<br />Price is required field";
         if(item.getStatus() == null || Utils.checkNull(item.getStatus())) msg += "<br />Status is required field";
         if(item.getContactPerson() == null || Utils.checkNull(item.getContactPerson())) msg += "<br />Contact Person is required field";
         if(item.getContactPhone() == null || Utils.checkNull(item.getContactPhone())) msg += "<br />Contact Phone is required field";
@@ -66,7 +69,7 @@ public class ItemService {
     }
     public List<Item> findAll() throws IllegalAccessException, SQLException, InstantiationException {
         ItemDao itemDao = new ItemDao();
-        return itemDao.listItems();
+        return itemDao.all();
     }
     public void delete(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
         int id=Integer.parseInt(request.getParameter("id"));
@@ -74,6 +77,19 @@ public class ItemService {
         attributes.addFlashAttribute("tab","item_list");
         if(itemDao.delete(id))attributes.addFlashAttribute("message","Data delete successfully");
         else attributes.addFlashAttribute("error","Item not exists, Refresh your browser properly");
+    }
+    public List<Item> findByUserType(int id) throws IllegalAccessException, SQLException, InstantiationException {
+        User user = new UserService().get(id);
+        List<Item> list;
+        ItemDao itemDao = new ItemDao();
+        if(user.getType().equalsIgnoreCase("SUPER"))
+            list=itemDao.all();
+        else if (user.getType().equalsIgnoreCase("ADMIN"))
+                list=itemDao.findByAdmin(id);
+        else list = itemDao.findByUser(id);
+        return list;
+
+
     }
 
 }

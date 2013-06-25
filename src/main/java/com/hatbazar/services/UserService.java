@@ -53,7 +53,11 @@ public class UserService {
     private User userInstance(HttpServletRequest request) throws IllegalAccessException, InstantiationException, UnsupportedEncodingException, NoSuchAlgorithmException, SQLException {
         User user=null;
         if(!Utils.checkNull(request.getParameter("id")))user = get(Integer.parseInt(request.getParameter("id")));
-        else user = new User();
+        else {
+            user = new User();
+            System.out.println("userId :: in session ::"+request.getSession().getAttribute("userId"));
+            if(request.getSession().getAttribute("userId")!=null && !Utils.checkNull(request.getSession().getAttribute("userId").toString())) user.setAddedBy((Integer)request.getSession().getAttribute("userId"));
+        }
         if(!Utils.checkNull(request.getParameter("name"))) user.setName(request.getParameter("name").trim());
         if(!Utils.checkNull(request.getParameter("address"))) user.setAddress(request.getParameter("address").trim());
         if(!Utils.checkNull(request.getParameter("email"))) user.setEmail(request.getParameter("email").replace(" ","").trim());
@@ -69,18 +73,18 @@ public class UserService {
         if(user.getName()==null || Utils.checkNull(user.getName())) msg += "Name is required field";
         if(user.getEmail() == null || Utils.checkNull(user.getEmail())) msg += "<br />Email is required field";
         if(user.getType() == null || Utils.checkNull(user.getType())) msg += "<br />User Role is required field";
-
         else{
             if (!Utils.isValidEmail(user.getEmail())) msg += "<br />Please enter valid Email";
         }
-        if(user.getPassword() == null || Utils.checkNull(user.getPassword()))msg += "<br />Password is required field";
-        else{
-            if(user.getPassword() == Utils.md5(request.getParameter("password"))){  // if password request for change or not OR new
-                if((request.getParameter("rpassword") == null || Utils.checkNull(request.getParameter("rpassword"))))msg  += "<br />Re-Enter Password is required field";
+        if(user.getPassword() == null || Utils.checkNull(user.getPassword())){
+            msg += "<br />Password is required field";
+        }else{
+            if(user.getPassword().equalsIgnoreCase(Utils.md5(request.getParameter("password").trim()))){  // if password request for change or not OR new
+                if((request.getParameter("rpassword").trim() == null || Utils.checkNull(request.getParameter("rpassword").trim())))msg  += "<br />Re-Enter Password is required field";
                 else {
-                    if (user.getPassword()!= request.getParameter("rpassword")) msg+="<br /> Re-Enter password not match";
+                    if (!user.getPassword().equals(Utils.md5(request.getParameter("rpassword").trim()))) msg+="<br /> Re-Enter password not match";
                 }
-            }
+            } else System.out.println("password not changing :::");
         }
         attributes.addFlashAttribute("error",msg);
         return msg=="";

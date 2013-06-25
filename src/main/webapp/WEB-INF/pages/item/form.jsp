@@ -12,15 +12,16 @@
                         <tr>
                             <td><label for="name">Name</label></td>
                             <td>:</td>
-                            <td><input type="text" name="name" id="name" value="" /> </td>
+                            <td><input type="text" name="name" id="name" /> </td>
                         </tr>
                         <tr>
                             <td><label>Category</label></td>
                             <td>:</td>
                             <td>
                                 <p>
-                                    <label class="pull-left" for="category_a">A &nbsp;<input type="radio" name="type" value="A" id="category_a" />&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <label class="pull-left" for="category_b">B &nbsp;<input type="radio" name="type" value="B" id="category_b" /></label>
+                                    <label class="pull-left" for="cattle">CATTLE&nbsp;<input type="radio" name="category" value="CATTLE" id="cattle" />&nbsp;&nbsp;&nbsp;</label>
+                                    <label class="pull-left" for="vegetables">VEGETABLES&nbsp;<input type="radio" name="category" value="VEGETABLES" id="vegetables" />&nbsp;&nbsp;&nbsp;</label>
+                                    <label class="pull-left" for="land">LAND&nbsp;<input type="radio" name="category" value="VEGETABLES" id="land" /></label>
                                 </p>
                             </td>
                         </tr>
@@ -34,8 +35,8 @@
                             <td>:</td>
                             <td>
                                 <p>
-                                    <label class="pull-left" for="status_active">ACTIVE &nbsp;<input type="radio" name="type" value="ACTIVE" id="status_active" />&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <label class="pull-left" for="status_deactive">DEACTIVE &nbsp;<input type="radio" name="type" value="DEACTIVE" id="status_deactive" /></label>
+                                    <label class="pull-left" for="status_active">ACTIVE &nbsp;<input type="radio" name="status" value="ACTIVE" id="status_active" />&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label class="pull-left" for="status_deactive">DEACTIVE &nbsp;<input type="radio" name="status" value="DEACTIVE" id="status_deactive" /></label>
                                 </p>
                             </td>
                         </tr>

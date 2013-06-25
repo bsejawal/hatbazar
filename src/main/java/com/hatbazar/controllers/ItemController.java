@@ -27,7 +27,9 @@ public class ItemController {
     ItemService itemService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public String index(){
+    public String index(HttpServletRequest request) throws IllegalAccessException, SQLException, InstantiationException {
+        request.setAttribute("list",itemService.findByUserType((Integer)request.getSession().getAttribute("userId")));
+//        request.setAttribute("user",itemService.get(Integer.parseInt(request.getSession().getAttribute("userId").toString())));
         return "item/index";
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)

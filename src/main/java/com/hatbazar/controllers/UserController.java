@@ -32,11 +32,8 @@ public class UserController {
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String save(HttpServletRequest request, HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, InstantiationException, UnsupportedEncodingException, NoSuchAlgorithmException, SQLException {
-        if(userService.save(request,attributes)){
-            return "redirect:/user";
-        }else {
-            return "redirect:/user";
-        }
+        userService.save(request,attributes);
+        return "redirect:/user";
     }
     @RequestMapping(value = "/delete")
     public String delete(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {

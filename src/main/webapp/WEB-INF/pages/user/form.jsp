@@ -45,7 +45,7 @@
                             <td><input type="text" name="username" id="username" /></td>
                         </tr>
                         <tr id="tr-password">
-                            <td><label for="password">Password</label></td>
+                            <td><label for="password" id="user_password">Password</label></td>
                             <td>:</td>
                             <td><input type="password" name="password" id="password" /></td>
                         </tr>

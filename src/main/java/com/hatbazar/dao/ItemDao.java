@@ -21,6 +21,7 @@ public class ItemDao extends Mysql {
         this.connect();
     }
     public boolean create(Item item) throws InstantiationException, IllegalAccessException {
+        System.out.println("ItemDao.create");
         try {
             PreparedStatement ps = conn.prepareStatement("INSERT INTO "+table+" (`name`, `category`, `added_by`, `price`,`status`,`contact_person`,`contact_phone`,`details`) VALUES (?,?,?,?,?,?,?,?)");
             setPreparedStatement(item, ps);
@@ -42,7 +43,7 @@ public class ItemDao extends Mysql {
     }
 
 
-    public List<Item> listItems() throws SQLException, InstantiationException, IllegalAccessException {
+    public List<Item> all() throws SQLException, InstantiationException, IllegalAccessException {
         String sql = "SELECT * FROM "+table;
         PreparedStatement ps = conn.prepareStatement(sql);
         List<Item> list = rows(find(ps));
@@ -98,5 +99,23 @@ public class ItemDao extends Mysql {
         ps.setString(6,item.getContactPerson());
         ps.setString(7,item.getContactPhone());
         ps.setString(8,item.getDetails());
+    }
+    public List<Item> findByAdmin(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "SELECT * FROM "+table+" WHERE `added_by` IN (SELECT `id` FROM `user` WHERE `added_by`=?)";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+    public List<Item> findByUser(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "SELECT * FROM "+table+" WHERE `added_by`=?";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
     }
 }

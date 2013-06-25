@@ -22,23 +22,20 @@
     <schema name="" catalog="test_aman"/>
     <schema name="" catalog="test_bikram"/>
     <schema name="" catalog="testjava"/>
-    <table name="category" schema="" catalog="hatbazar" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
     <table name="item" schema="" catalog="hatbazar" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
-      <column name="category" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="price" sqlType="DECIMAL" length="10" precision="0" nullable="false" jdbcType="3"/>
-      <column name="status" sqlType="BIT" length="0" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="category" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="price" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3"/>
+      <column name="status" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
+      <column name="contact_person" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="contact_phone" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="details" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
       <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="item_request_ibfk_1" table="item_request" schema="" catalog="hatbazar" columns="item"/>
-      <index name="added_by" unique="false" columns="added_by"/>
     </table>
     <table name="item_request" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -60,6 +57,7 @@
       <column name="password" sqlType="VARCHAR" length="32" precision="0" nullable="true" jdbcType="12"/>
       <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="item_request_ibfk_2" table="item_request" schema="" catalog="hatbazar" columns="req_by"/>
       <index name="username" unique="true" columns="username"/>
@@ -435,45 +433,18 @@
       <column name="CHARACTER_SET_CLIENT" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="COLLATION_CONNECTION" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
     </table>
-    <table name="book" schema="" catalog="library" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
-      <column name="publisher" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
-      <column name="author" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
-      <column name="category" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="book_ibfk_1" columns="category" ref-table="category" ref-schema="" ref-catalog="library" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="issue_book_ibfk_3" table="issue_book" schema="" catalog="library" columns="book"/>
-    </table>
-    <table name="category" schema="" catalog="library" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="book_ibfk_1" table="book" schema="" catalog="library" columns="category"/>
-    </table>
-    <table name="issue_book" schema="" catalog="library" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="book" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="request_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="issued_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="issued_date" sqlType="DATETIME" length="19" precision="0" nullable="false" jdbcType="93"/>
-      <column name="return_date" sqlType="DATETIME" length="19" precision="0" nullable="false" jdbcType="93"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="issue_book_ibfk_1" columns="request_by" ref-table="user" ref-schema="" ref-catalog="library" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="issue_book_ibfk_2" columns="issued_by" ref-table="user" ref-schema="" ref-catalog="library" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="issue_book_ibfk_3" columns="book" ref-table="book" ref-schema="" ref-catalog="library" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-    </table>
     <table name="user" schema="" catalog="library" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="username" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
-      <column name="password" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
       <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="phone" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
-      <column name="email" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
-      <column name="userType" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
+      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="32" precision="0" nullable="true" jdbcType="12"/>
+      <column name="status" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="issue_book_ibfk_1" table="issue_book" schema="" catalog="library" columns="request_by"/>
-      <exported-key name="issue_book_ibfk_2" table="issue_book" schema="" catalog="library" columns="issued_by"/>
     </table>
     <table name="columns_priv" schema="" catalog="mysql" type="TABLE">
       <column name="Host" sqlType="CHAR" length="60" precision="0" nullable="false" jdbcType="1" def="Jyc="/>

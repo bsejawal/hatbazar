@@ -16,6 +16,7 @@ public class User {
     String type;
     String username;
     String password;
+    int addedBy=0;
 
     public int getId() {
         return id;
@@ -79,5 +80,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getAddedBy() {
+        return addedBy;
+    }
+
+    public void setAddedBy(int added_by) {
+        this.addedBy = added_by;
     }
 }

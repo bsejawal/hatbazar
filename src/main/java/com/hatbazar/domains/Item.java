@@ -13,7 +13,7 @@ public class Item {
     String category;
     int addedBy; // User who added this item
     double price=0;
-    String status;
+    String status="ACTIVE";
     String contactPerson;
     String contactPhone;
     String details;

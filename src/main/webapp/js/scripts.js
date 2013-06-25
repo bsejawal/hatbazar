@@ -1,22 +1,26 @@
 function prepareUserForm(flag,id,el){
     clearForm();
     if(flag=='new'){
-    $("#myModalLabel").text("Add New User");
+        $("#myModalLabel").text("Add New User");
+        $("#user_password").text("Password");
     }else if(flag=='profile'){
         setFormData(getProfile(el));
-     $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
-    $("#myModalLabel").text("Edit Your Profile");
+        $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
+        $("#myModalLabel").text("Edit Your Profile");
+        $("#user_password").text("Change Password");
     }else if(flag=='edit'){
-        setFormData(getEdit(el));
+        setFormData(getUserEdit(el));
         $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
         $("#myModalLabel").text("Edit User");
+        $("#user_password").text("Change Password");
     }
 }
 
 function clearForm(){
     $("input[type=hidden]").remove();
     $("input[type=text]").val("");
-    $("input[type=radio]").prop("checked",false);
+    $("input[type=radio]").removeProp("checked");
+
 }
 
 function getProfile(el){
@@ -30,7 +34,7 @@ function getProfile(el){
     data.username=e.find("tr:eq(5)").find("td:eq(2)").text();
     return data;
 }
-function getEdit(el){
+function getUserEdit(el){
     var e = $(el).parent().parent();
     var data=new Object();
     data.name= e.find("td:eq(0)").text();
@@ -47,8 +51,11 @@ function setFormData(data){
     $("#address").val(data['address']);
     $("#email").val(data['email']);
     $("#phone").val(data['phone']);
-    if(data['type']=="ADMIN")$("#user_admin").attr('checked', 'checked');
-    else if(data['type']=="NORMAL")$("#user_normal").attr('checked', 'checked');
+    if(data['type'].trim()=="ADMIN"){
+        $("#user_admin").attr("checked", "checked");
+    }else if(data['type'].trim()=="NORMAL"){
+        $("#user_normal").attr("checked", "checked");
+    }
     $("#username").val(data['username']);
 }
 function adminTab(tab){
@@ -59,4 +66,15 @@ function adminTab(tab){
 
 function checkNull(st){
     return st=="" || st == null || st == "undefined";
+}
+
+function prepareItemForm(flag,id,el){
+    clearForm();
+    if(flag=='new'){
+        $("#myModalLabel").text("Add New Item");
+    }else if(flag=='edit'){
+        setFormData(getUserEdit(el));
+        $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
+        $("#myModalLabel").text("Edit User");
+    }
 }
