@@ -8,13 +8,13 @@ package com.hatbazar.domains;
  * To change this template use File | Settings | File Templates.
  */
 public class Contact {
-    int id;
+    int id=0;
     String name;
     String email;
     String phone;
     String subject;
     String message;
-    boolean isNew;
+    boolean isNew=true;
 
     public int getId() {
         return id;

@@ -68,3 +68,36 @@ input[type=radio] {
 }
 
 .item-box{border: 2px solid #a9a9a9; margin: 5px; padding: 5px; border-radius: 7px;}
+.icon-close{
+    background-image: url("../img/close-icon.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-position: 0;
+}
+
+.info-required{
+    color: #f00;
+    font-size: 18px;
+    margin-left: 3px;
+}
+.required-info{
+    color: #f00;
+    font-size: 12px;
+}
+.icon-user-add{
+    background-image: url("../img/user_add.png");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-position: 0;
+}
+.sidebox{
+    width: 93%;
+    margin: 0 0 20px 0;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    text-align: justify;
+}

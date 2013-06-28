@@ -146,6 +146,16 @@ public class ItemDao extends Mysql {
         if(list ==null)return null;
         else return list;
     }
+    public List<Item> getSoldItems(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql ="SELECT * FROM "+table+" WHERE `status`='SOLD' AND `reserved_by`=? ORDER BY `id` DESC";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+
     public boolean reserve(int userId, int id) throws SQLException, InstantiationException, IllegalAccessException {
         String sql = "UPDATE "+table+" SET `status`=?,`reserved_by`=? WHERE `id`=? LIMIT 1";
         PreparedStatement ps= conn.prepareStatement(sql);
@@ -160,5 +170,19 @@ public class ItemDao extends Mysql {
         ps.setInt(1,id);
         return affect(ps);
     }
-
+    public boolean sold(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "UPDATE "+table+" SET `status`='SOLD' WHERE `id`=? LIMIT 1";
+        PreparedStatement ps= conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        return affect(ps);
+    }
+    public List<Item> searchByName(String query) throws SQLException, InstantiationException, IllegalAccessException {
+        query=query.toLowerCase();
+        String sql ="SELECT * FROM "+table+" WHERE LOWER(`name`) like '%"+query+"%' AND `status`='ACTIVE' LIMIT 20";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        List<Item> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
 }

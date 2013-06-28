@@ -98,4 +98,43 @@ public class ContactDao extends Mysql {
         ps.setBoolean(6,contact.isNew());
     }
 
+    public List<Contact> getAllUnReadMessage() throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "SELECT * FROM "+table+" WHERE `is_new`=?";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setBoolean(1,true);
+        List<Contact> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+    public List<Contact> getReadMessage() throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "SELECT * FROM "+table+" WHERE `is_new`=?";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setBoolean(1,false);
+        List<Contact> list = rows(find(ps));
+        close();
+        if(list ==null)return null;
+        else return list;
+    }
+
+    public Contact get(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        if(makeAsRead(id)){
+        String sql = "SELECT * FROM "+table+" WHERE `id`=? LIMIT 1";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1,id);
+        List<Contact> list = rows(find(ps));
+        close();
+        if(list ==null || list.size()==0)return null;
+        else return list.get(0);
+        }
+        return null;
+    }
+
+    public boolean makeAsRead(int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "UPDATE "+table+" SET `is_new`=?, `id`=? LIMIT 1";
+        PreparedStatement ps= conn.prepareStatement(sql);
+        ps.setBoolean(1,false);
+        ps.setInt(2,id);
+        return affect(ps);
+    }
 }

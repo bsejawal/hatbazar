@@ -1,40 +1,38 @@
 function prepareUserForm(flag,id,el){
-    clearForm("userForm");
+    resetForm("userForm");
     if(flag=='new'){
-        $("#myModalLabel").text("Add New User");
-        $("#user_password").text("Password");
-    }else if(flag=='profile'){
-        setUserFormData(getProfile(el));
-        $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
-        $("#myModalLabel").text("Edit Your Profile");
-        $("#user_password").text("Change Password");
+        $("#userModalLabel").text("Add New User");
+        $("#lbl_user_password").text("Password");
+        userNewForm();
     }else if(flag=='edit'){
+        $("#userModalLabel").text("Edit User");
+        $("#lbl_user_password").text("Change Password");
+        userFormRemoveRequiredAttribute();
         setUserFormData(getUserEdit(el));
         $("#userForm").append("<input type='hidden' name='id' value='"+id+"' />");
-        $("#myModalLabel").text("Edit User");
-        $("#user_password").text("Change Password");
     }
 }
-
-function clearForm(form){
-    $("input[type=hidden]").remove();
-    $("input[type=text]").val("");
-    $("input[type=radio]").removeProp("checked");
-    $('#'+form).trigger("reset");
-
+function userNewForm(){
+    userFormRemoveRequiredAttribute();
+    $("#lbl_user_password").append("<span class='info-required'>*</span>");
+    $("#lbl_user_rpassword").append("<span class='info-required'>*</span>");
+    $("#user_rpassword").prop("required","true");
+    $("#user_password").prop("required","true");
 }
 
-function getProfile(el){
-    var e = $(el).next("table");
-    var data=new Object();
-    data.name= e.find("tr:eq(0)").find("td:eq(2)").text();
-    data.address=e.find("tr:eq(1)").find("td:eq(2)").text();
-    data.email=e.find("tr:eq(2)").find("td:eq(2)").text();
-    data.phone=e.find("tr:eq(3)").find("td:eq(2)").text();
-    data.type=e.find("tr:eq(4)").find("td:eq(2)").text();
-    data.username=e.find("tr:eq(5)").find("td:eq(2)").text();
-    return data;
+function userFormRemoveRequiredAttribute(){
+    $("#lbl_user_password").find(".info-required").remove();
+    $("#lbl_user_rpassword").find(".info-required").remove();
+    $("#user_rpassword").removeProp("required");
+    $("#user_password").removeProp("required");
 }
+
+function resetForm(form){
+    $('#'+form).each(function(){
+       this.reset();
+    });
+}
+
 function getUserEdit(el){
     var e = $(el).parent().parent();
     var data=new Object();
@@ -42,9 +40,7 @@ function getUserEdit(el){
     data.address=e.find("td:eq(1)").text();
     data.email=e.find("td:eq(2)").text();
     data.phone=e.find("td:eq(3)").text();
-    data.type=e.find("td:eq(4)").text();
-    data.username=e.find("td:eq(5)").text();
-    alert(data["address"]+" "+data["email"]+" "+data["phone"]);
+    data.username=e.find("td:eq(4)").text();
     return data;
 
 }
@@ -53,15 +49,10 @@ function setUserFormData(data){
     $("#address").val(data['address']);
     $("#email").val(data['email']);
     $("#phone").val(data['phone']);
-    if(data['type'].trim()=="ADMIN"){
-        $("#user_admin").attr("checked", "checked");
-    }else if(data['type'].trim()=="NORMAL"){
-        $("#user_normal").attr("checked", "checked");
-    }
     $("#username").val(data['username']);
 }
 function adminTab(tab){
-    if(tab!="profile" && !checkNull(tab)){
+    if(!checkNull(tab)){
         $("#tab-"+tab).tab("show");
     }
 }
@@ -71,7 +62,7 @@ function checkNull(st){
 }
 
 function prepareItemForm(flag,id,el){
-    clearForm("itemForm");
+    resetForm("itemForm");
     if(flag=='new'){
         $("#myModalLabel").text("Add New Item");
     }else if(flag=='edit'){
@@ -80,19 +71,7 @@ function prepareItemForm(flag,id,el){
         $("#myModalLabel").text("Edit Item");
     }
 }
-//
-//function getItemEdit(el){
-//    var e = $(el).parent().parent();
-//    var data=new Object();
-//    data.name= e.find("td:eq(0)").text();
-//    data.category=e.find("td:eq(1)").text();
-//    data.price=e.find("td:eq(3)").text();
-//    data.status=e.find("td:eq(4)").text();
-//    data.contactPerson=e.find("td:eq(5)").text();
-//    data.contactPhone=e.find("td:eq(6)").text();
-//    data.details=e.find("td:eq(6)").text();
-//    return data;
-//}
+
 function getItemEdit(el){
     var e = $(el).parent().parent();
     var data=new Object();
@@ -124,5 +103,13 @@ function setItemFormData(data){
     }else if(data['status'].trim()=="DEACTIVE"){
         $("#status_deactive").attr("checked", "checked");
     }
-
 }
+
+
+
+//global script
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+

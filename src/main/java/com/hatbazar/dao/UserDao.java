@@ -37,7 +37,7 @@ public class UserDao extends Mysql {
 
 
     public List<User> listUsers() throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "SELECT * FROM "+table;
+        String sql = "SELECT * FROM "+table+" WHERE `type`<>'SUPER'";
         PreparedStatement ps = conn.prepareStatement(sql);
         List<User> list = rows(find(ps));
         close();
@@ -60,7 +60,6 @@ public class UserDao extends Mysql {
         return affect(ps);
     }
     public User authenticate(User user) throws SQLException, InstantiationException, IllegalAccessException {
-        System.out.println("in userDao authenticate ::");
         String sql = "SELECT * FROM `user` WHERE `username`=? AND `password`=? LIMIT 1";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setString(1,user.getUsername());
@@ -102,5 +101,15 @@ public class UserDao extends Mysql {
         ps.setString(6, user.getUsername());
         ps.setString(7, user.getPassword());
         ps.setInt(8, user.getAddedBy());
+    }
+    public User getByUserName(String username, int id) throws SQLException, InstantiationException, IllegalAccessException {
+        String sql = "SELECT * FROM "+table+" WHERE `username`=? AND `id`<>?";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setString(1,username);
+        ps.setInt(2,id);
+        List<User> list = rows(find(ps));
+        close();
+        if(list== null || list.size()==0)return null;
+        else return list.get(0);
     }
 }

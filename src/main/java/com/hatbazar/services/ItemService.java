@@ -86,6 +86,9 @@ public class ItemService {
     public List<Item> getReservedItems(int id) throws InstantiationException, IllegalAccessException, SQLException {
         return new ItemDao().getReservedItems(id);
     }
+    public List<Item> getSoldItems(int id) throws InstantiationException, IllegalAccessException, SQLException {
+        return new ItemDao().getSoldItems(id);
+    }
     public boolean reserve(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
         if (!Utils.isLogin(request)){
             return false;
@@ -114,6 +117,44 @@ public class ItemService {
             }
             return false;
         }
+    }
+    public boolean sold(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
+        if (!Utils.isLogin(request)){
+            return false;
+        } else {
+            int id = Integer.parseInt(request.getParameter("id"));
+            if(new ItemDao().sold(id)){
+                attributes.addFlashAttribute("message","You have successfully moved reserved to sold.");
+                attributes.addFlashAttribute("tab","sold");
+                return true;
+            }
+            return false;
+        }
+    }
+
+    public String getTypeAhead(String query) throws InstantiationException, IllegalAccessException, SQLException {
+       List<Item> list=new ItemDao().searchByName(query);
+        if (list==null || list.size()==0){
+            return "null";
+        }else{
+            String toRet = "";
+            for (Item item : list) {
+                toRet+= item.getName()+",";
+            }
+            toRet = toRet.substring(0, toRet.length() - 1);
+            return toRet;
+        }
+    }
+
+    public List<Item> searchByname(String query, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
+        List<Item> list = new ItemDao().searchByName(query);
+       if(list==null || list.size()==0) {
+           attributes.addFlashAttribute("error","Result Not Found Please Provide other word");
+           return null;
+       }else{
+           attributes.addFlashAttribute("message",list.size() +" Result Found !");
+           return list;
+       }
     }
 
 

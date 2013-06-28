@@ -33,6 +33,7 @@ public class ItemController {
         request.setAttribute("yourList",itemService.getYourItems(id));
         request.setAttribute("availableList",itemService.getAvailableItems(id));
         request.setAttribute("reservedList",itemService.getReservedItems(id));
+        request.setAttribute("soldList",itemService.getSoldItems(id));
         return "item/index";
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -54,6 +55,11 @@ public class ItemController {
     @RequestMapping(value = "/cancelReserved")
     public String cancelReserved(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
         itemService.cancelReserved(request,attributes);
+        return "redirect:/item";
+    }
+    @RequestMapping(value = "/sold")
+    public String sold(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
+        itemService.sold(request,attributes);
         return "redirect:/item";
     }
 

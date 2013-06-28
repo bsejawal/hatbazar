@@ -1,5 +1,7 @@
 package com.hatbazar.controllers;
 
+import com.hatbazar.domains.Contact;
+import com.hatbazar.services.ContactService;
 import com.hatbazar.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,12 +15,16 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
     @Autowired
     UserService userService;
+
+    @Autowired
+    ContactService contactService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(HttpServletRequest request, HttpServletResponse response) throws IllegalAccessException, InstantiationException, SQLException, IOException {
@@ -39,5 +45,24 @@ public class UserController {
     public String delete(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
         userService.delete(request,attributes);
         return "redirect:/user";
+    }
+
+    @RequestMapping(value = "/getMessage", method = RequestMethod.GET)
+    public String getMessage(HttpServletRequest request, HttpServletResponse response, RedirectAttributes attributes) throws UnsupportedEncodingException, SQLException, InstantiationException, NoSuchAlgorithmException, IllegalAccessException {
+        request.setAttribute("message",contactService.get(Integer.parseInt(request.getParameter("id"))));
+        return  "user/index";
+    }
+
+    @RequestMapping(value = "/message", method = RequestMethod.GET)
+    public String message(HttpServletRequest request, HttpServletResponse response, RedirectAttributes attributes) throws UnsupportedEncodingException, SQLException, InstantiationException, NoSuchAlgorithmException, IllegalAccessException {
+        request.setAttribute("unRead",contactService.getAllUnReadMessage());
+        request.setAttribute("readMessage",contactService.getReadMessage());
+        return  "contact/index";
+    }
+
+    @RequestMapping(value = "/messageDelete", method = RequestMethod.GET)
+    public String messageDelete(HttpServletRequest request, HttpServletResponse response, RedirectAttributes attributes) throws UnsupportedEncodingException, SQLException, InstantiationException, NoSuchAlgorithmException, IllegalAccessException {
+        contactService.delete(Integer.parseInt(request.getParameter("id")), attributes);
+        return  "redirect:/user/message";
     }
 }

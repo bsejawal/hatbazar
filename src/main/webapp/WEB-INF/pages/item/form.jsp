@@ -1,8 +1,9 @@
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="itemModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <form method="post" action="/item/save" id="itemForm">
         <div class="modal-header">
             <a href="javascript:void(0)" class="icon-remove pull-right" data-dismiss="modal" aria-hidden="true"></a>
-            <h3 id="myModalLabel">test header</h3>
+            <h3 id="myModalLabel">Item</h3>
+            <div class="required-info">* Fields are required</div>
         </div>
         <div class="modal-body">
             <p>
@@ -10,12 +11,12 @@
                 <div class="hero-unit">
                     <table class="table table-striped" id="userForm">
                         <tr>
-                            <td><label for="name">Name</label></td>
+                            <td><label for="name">Name<span class="info-required">*</span></label></td>
                             <td>:</td>
-                            <td><input type="text" name="name" id="name" required /> </td>
+                            <td><input type="text" name="name" id="name" required /></td>
                         </tr>
                         <tr>
-                            <td><label>Category</label></td>
+                            <td><label>Category<span class="info-required">*</span></label></td>
                             <td>:</td>
                             <td>
                                 <p>
@@ -26,12 +27,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="price">Price</label></td>
+                            <td><label for="price">Price<span class="info-required">*</span></label></td>
                             <td>:</td>
                             <td><input type="number" name="price" id="price" required /></td>
                         </tr>
                         <tr>
-                            <td><label>Status</label></td>
+                            <td><label>Status<span class="info-required">*</span></label></td>
                             <td>:</td>
                             <td>
                                 <p>
@@ -41,12 +42,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="contactPerson">Contact Person</label></td>
+                            <td><label for="contactPerson">Contact Person<span class="info-required">*</span></label></td>
                             <td>:</td>
                             <td><input type="text" name="contactPerson" id="contactPerson" required /></td>
                         </tr>
                         <tr>
-                            <td><label for="contactPhone">Contact Phone</label></td>
+                            <td><label for="contactPhone">Contact Phone<span class="info-required">*</span></label></td>
                             <td>:</td>
                             <td><input type="number" name="contactPhone" id="contactPhone" required /></td>
                         </tr>
@@ -61,8 +62,8 @@
             </p>
         </div>
         <div class="modal-footer">
-            <input type="reset" class="btn" data-dismiss="modal" aria-hidden="true" value="Close" />
-            <input type="submit" class="btn btn-primary" value="Save changes" />
+            <input type="reset" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" value="Close" />
+            <input type="submit" class="btn btn-inverse" value="Save changes" />
         </div>
     </form>
 </div>

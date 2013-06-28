@@ -22,7 +22,13 @@ import java.util.List;
 public class UserService {
     public boolean authenticate(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException, UnsupportedEncodingException, NoSuchAlgorithmException {
         User user = userInstance(request);
-        return validUser(user,request, attributes);
+        boolean login = validUser(user,request, attributes);
+        if(login){
+            attributes.addFlashAttribute("message","Successfully logged in, Welcome to Online Haatbazar");
+            return true;
+        }else
+        return false;
+//        return validUser(user,request, attributes);
     }
     public boolean isLogin(User user, HttpServletRequest request){
         if(user.getId()!=0){
@@ -67,9 +73,14 @@ public class UserService {
         if(!Utils.checkNull(request.getParameter("password"))) user.setPassword(Utils.md5(request.getParameter("password").trim()));
         return user;
     }
-    public boolean isValid(User user, HttpServletRequest request, RedirectAttributes attributes) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-        if(request.getSession().getAttribute("userId").toString()!=String.valueOf(user.getId()))attributes.addFlashAttribute("tab","user_list");
-        String msg = "";
+    public boolean isValid(User user, HttpServletRequest request, RedirectAttributes attributes) throws UnsupportedEncodingException, NoSuchAlgorithmException, IllegalAccessException, SQLException, InstantiationException {
+        if((Integer)request.getSession().getAttribute("userId")==user.getId()) attributes.addFlashAttribute("tab","profile");
+        else attributes.addFlashAttribute("tab","list");
+        String msg="";
+        if(!isNewUserName(user.getUsername(),user.getId())){
+            attributes.addFlashAttribute("error","\""+user.getUsername()+"\" username is already exists, please try another username");
+            return false;
+        }
         if(user.getName()==null || Utils.checkNull(user.getName())) msg += "Name is required field";
         if(user.getEmail() == null || Utils.checkNull(user.getEmail())) msg += "<br />Email is required field";
         if(user.getType() == null || Utils.checkNull(user.getType())) msg += "<br />User Role is required field";
@@ -111,8 +122,13 @@ public class UserService {
     public void delete(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
         int id=Integer.parseInt(request.getParameter("id"));
         UserDao userDao=new UserDao();
-        attributes.addFlashAttribute("tab","user_list");
+        attributes.addFlashAttribute("tab","list");
         if(userDao.delete(id))attributes.addFlashAttribute("message","Data delete successfully");
         else attributes.addFlashAttribute("error","User not exists, Refresh your browser properly");
+    }
+    public boolean isNewUserName(String username, int id) throws InstantiationException, IllegalAccessException, SQLException {
+        User user = new UserDao().getByUserName(username, id);
+        if(user==null)return true;
+        return false;
     }
 }
