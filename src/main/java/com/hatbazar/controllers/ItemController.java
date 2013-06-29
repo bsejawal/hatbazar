@@ -58,11 +58,8 @@ public class ItemController {
         return "redirect:/item";
     }
     @RequestMapping(value = "/sold")
-    public String sold(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException {
+    public String sold(HttpServletRequest request,HttpServletResponse response, RedirectAttributes attributes) throws IllegalAccessException, SQLException, InstantiationException, UnsupportedEncodingException, NoSuchAlgorithmException {
         itemService.sold(request,attributes);
         return "redirect:/item";
     }
-
-
-
 }

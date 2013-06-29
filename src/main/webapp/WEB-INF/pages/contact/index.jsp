@@ -15,7 +15,5 @@
         <div id="read" class="tab-pane fade">
             <p><jsp:include page="read.jsp" flush="true" /></p>
         </div>
-    <div class="hide">
         <jsp:include page="view.jsp" flush="true" />
-    </div>
 </div>

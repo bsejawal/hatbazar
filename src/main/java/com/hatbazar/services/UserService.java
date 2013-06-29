@@ -2,14 +2,15 @@ package com.hatbazar.services;
 
 import com.hatbazar.dao.UserDao;
 import com.hatbazar.domains.User;
+import com.hatbazar.utilities.Constants;
 import com.hatbazar.utilities.Utils;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,14 +28,15 @@ public class UserService {
             attributes.addFlashAttribute("message","Successfully logged in, Welcome to Online Haatbazar");
             return true;
         }else
-        return false;
+            return false;
 //        return validUser(user,request, attributes);
     }
-    public boolean isLogin(User user, HttpServletRequest request){
+    public boolean isLogin(User user, HttpServletRequest request) throws UnsupportedEncodingException, SQLException, InstantiationException, NoSuchAlgorithmException, IllegalAccessException {
         if(user.getId()!=0){
             request.getSession().setAttribute("isLogin",true);
             request.getSession().setAttribute("userId",user.getId());
             request.getSession().setAttribute("userType",user.getType());
+            new UserLogService().create(user.getId(), "Login");
             return true;
         }
         return false;
@@ -61,7 +63,6 @@ public class UserService {
         if(!Utils.checkNull(request.getParameter("id")))user = get(Integer.parseInt(request.getParameter("id")));
         else {
             user = new User();
-            System.out.println("userId :: in session ::"+request.getSession().getAttribute("userId"));
             if(request.getSession().getAttribute("userId")!=null && !Utils.checkNull(request.getSession().getAttribute("userId").toString())) user.setAddedBy((Integer)request.getSession().getAttribute("userId"));
         }
         if(!Utils.checkNull(request.getParameter("name"))) user.setName(request.getParameter("name").trim());
@@ -130,5 +131,34 @@ public class UserService {
         User user = new UserDao().getByUserName(username, id);
         if(user==null)return true;
         return false;
+    }
+    public String dbBackup(HttpServletRequest request, RedirectAttributes attributes, HttpServletResponse response){
+        String message = "";
+        String executeCmd = Constants.DB_PATH;
+        System.out.println("executeCmd = " + executeCmd);
+        Process runtimeProcess;
+        try
+        {
+            System.out.println(executeCmd);
+
+            //this out put works in mysql shell
+            runtimeProcess = Runtime.getRuntime().exec(executeCmd);
+            int processComplete = runtimeProcess.waitFor();
+
+            if (processComplete == 0)
+            {
+                System.out.println("Backup created successfully");
+                message = "Backup created successfully in " + Constants.DB_OUTPUT_PATH;
+            }
+            else
+            {
+                System.out.println("Could not create the backup");
+                message = "Could not create the backup";
+            }
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        return  message;
     }
 }

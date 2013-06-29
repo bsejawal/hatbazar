@@ -1,6 +1,8 @@
 package com.hatbazar.controllers;
 
 import com.hatbazar.domains.User;
+import com.hatbazar.domains.UserLog;
+import com.hatbazar.services.UserLogService;
 import com.hatbazar.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 
 /**
@@ -27,6 +31,8 @@ import java.sql.SQLException;
 public class LoginController {
     @Autowired
     UserService userService;
+    @Autowired
+    UserLogService userLogService;
 
 
     @RequestMapping(method = RequestMethod.GET)
@@ -44,8 +50,9 @@ public class LoginController {
         return "redirect:/login";
     }
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
-    public String logout(RedirectAttributes attributes,HttpServletRequest request){
-        request.getSession().setAttribute("isLogin",null);
+    public String logout(RedirectAttributes attributes,HttpServletRequest request) throws UnsupportedEncodingException, SQLException, InstantiationException, NoSuchAlgorithmException, IllegalAccessException {
+        userLogService.create((Integer)request.getSession().getAttribute("userId"), "Logout");
+        request.getSession().setAttribute("isLogin", null);
         request.getSession().setAttribute("userId",null);
         attributes.addFlashAttribute("message","You have successfully logged out from this application");
         return "redirect:/login";

@@ -29,7 +29,7 @@ function userFormRemoveRequiredAttribute(){
 
 function resetForm(form){
     $('#'+form).each(function(){
-       this.reset();
+        this.reset();
     });
 }
 
@@ -113,3 +113,23 @@ function isEmail(email) {
     return regex.test(email);
 }
 
+function getMessage(id){
+    $.ajax({
+        url: "/user/getMessage",
+        type: "GET",
+        dataType:"text",
+        data: {id:id},
+        success:function(data){
+            getMessageProperty(data);
+        }
+    })
+}
+function getMessageProperty(data){
+    var ajaxData=data.split("#");
+    $("#sendBy").html(ajaxData[0]);
+    $("#senderEmail").html(ajaxData[1]);
+    $("#senderPhone").html(ajaxData[2]);
+    $("#senderSubject").html(ajaxData[3]);
+    $("#senderMessage").html(ajaxData[4]);
+    $("#viewMessage").modal("show");
+}

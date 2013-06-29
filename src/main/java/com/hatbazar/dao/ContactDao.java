@@ -18,9 +18,9 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ContactDao extends Mysql {
-    String table="contact";
+    String table="`contact`";
     public ContactDao() throws IllegalAccessException, InstantiationException {
-        this.connect();
+        connect();
     }
     public boolean create(Contact contact) throws InstantiationException, IllegalAccessException {
         try {
@@ -119,22 +119,24 @@ public class ContactDao extends Mysql {
 
     public Contact get(int id) throws SQLException, InstantiationException, IllegalAccessException {
         if(makeAsRead(id)){
-        String sql = "SELECT * FROM "+table+" WHERE `id`=? LIMIT 1";
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1,id);
-        List<Contact> list = rows(find(ps));
-        close();
-        if(list ==null || list.size()==0)return null;
-        else return list.get(0);
+            connect();
+            String sql = "SELECT * FROM "+table+" WHERE `id`=? LIMIT 1";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            List<Contact> list = rows(find(ps));
+            close();
+            if(list ==null || list.size()==0)return null;
+            else return list.get(0);
         }
         return null;
     }
 
     public boolean makeAsRead(int id) throws SQLException, InstantiationException, IllegalAccessException {
-        String sql = "UPDATE "+table+" SET `is_new`=?, `id`=? LIMIT 1";
+        String sql = "UPDATE "+table+" SET `is_new`=? WHERE `id`=? LIMIT 1";
         PreparedStatement ps= conn.prepareStatement(sql);
-        ps.setBoolean(1,false);
-        ps.setInt(2,id);
-        return affect(ps);
+        ps.setBoolean(1, false);
+        ps.setInt(2, id);
+        boolean rs =affect(ps);
+        return rs;
     }
 }

@@ -13,7 +13,7 @@
                     <td>${contact.name}</td>
                     <td>${contact.subject}</td>
                     <td></a>&nbsp;&nbsp;<a href="/user/messagedelete?id=${contact.id}" onclick="return confirm('Are you sure to delete?')" class="icon-remove" title="Delete"></a>
-                        <a href="/user/getMessage?id=${contact.id}" class="btn btn-inverse" title="View Details" ">View</a>
+                        <a href="javascript:void(0)" class="btn btn-inverse" title="View Details" onclick="getMessage('${contact.id}')">View</a>
                     </td>
                 </tr>
             </c:forEach>

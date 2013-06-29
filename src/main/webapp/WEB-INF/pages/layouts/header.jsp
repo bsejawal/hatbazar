@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-</div><br /><br /><br />
+</div><br /><br /><br /><br /><br /><br />
 <script type="text/javascript">
     $(document).ready(function(){
         $("#itemSearch").typeahead({

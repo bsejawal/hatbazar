@@ -60,6 +60,7 @@ public class Mysql {
         catch(SQLException e){
             System.err.println("Error while executeUpdate "+e.getMessage());
         }finally {
+            preparedStatement.clearParameters();
             close();
         }
         return result==0? false :true;

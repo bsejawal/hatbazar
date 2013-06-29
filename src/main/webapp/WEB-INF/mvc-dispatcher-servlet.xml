@@ -30,6 +30,7 @@
     <bean id="userService" class="com.hatbazar.services.UserService"></bean>
     <bean id="itemService" class="com.hatbazar.services.ItemService"></bean>
     <bean id="contactService" class="com.hatbazar.services.ContactService"></bean>
+    <bean id="userLogService" class="com.hatbazar.services.UserLogService"></bean>
 
     <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >-->
         <!--<property name="driverClassName" value="com.mysql.dao.Driver"/>-->

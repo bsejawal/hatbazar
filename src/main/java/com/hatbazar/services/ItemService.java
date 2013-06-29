@@ -19,6 +19,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ItemService {
+    ItemSoldService itemSoldService = new ItemSoldService();
     public Item get(int id) throws InstantiationException, IllegalAccessException, SQLException {
         ItemDao itemDao = new ItemDao();
         return itemDao.getItem(id);
@@ -118,12 +119,13 @@ public class ItemService {
             return false;
         }
     }
-    public boolean sold(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException {
+    public boolean sold(HttpServletRequest request, RedirectAttributes attributes) throws InstantiationException, IllegalAccessException, SQLException, UnsupportedEncodingException, NoSuchAlgorithmException {
         if (!Utils.isLogin(request)){
             return false;
         } else {
             int id = Integer.parseInt(request.getParameter("id"));
             if(new ItemDao().sold(id)){
+                itemSoldService.save(id, (Integer)request.getSession().getAttribute("userId"));
                 attributes.addFlashAttribute("message","You have successfully moved reserved to sold.");
                 attributes.addFlashAttribute("tab","sold");
                 return true;

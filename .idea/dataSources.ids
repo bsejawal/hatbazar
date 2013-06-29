@@ -18,9 +18,11 @@
     <schema name="" catalog="information_schema"/>
     <schema name="" catalog="library"/>
     <schema name="" catalog="mysql"/>
+    <schema name="" catalog="ridisearch"/>
     <schema name="" catalog="test"/>
     <schema name="" catalog="test_aman"/>
     <schema name="" catalog="test_bikram"/>
+    <schema name="" catalog="testhatbazar"/>
     <schema name="" catalog="testjava"/>
     <table name="contact" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -47,16 +49,16 @@
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="reserved_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="item_request_ibfk_1" table="item_request" schema="" catalog="hatbazar" columns="item"/>
+      <exported-key name="item_sold_ibfk_1" table="item_sold" schema="" catalog="hatbazar" columns="item"/>
     </table>
-    <table name="item_request" schema="" catalog="hatbazar" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+    <table name="item_sold" schema="" catalog="hatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="item" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="date" sqlType="DATETIME" length="19" precision="0" nullable="false" jdbcType="93"/>
+      <column name="date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <column name="req_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="item_request_ibfk_1" columns="item" ref-table="item" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="item_request_ibfk_2" columns="req_by" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="item_sold_ibfk_1" columns="item" ref-table="item" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="item_sold_ibfk_2" columns="req_by" ref-table="user" ref-schema="" ref-catalog="hatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="user" schema="" catalog="hatbazar" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -71,8 +73,17 @@
       <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="item_request_ibfk_2" table="item_request" schema="" catalog="hatbazar" columns="req_by"/>
+      <exported-key name="item_sold_ibfk_2" table="item_sold" schema="" catalog="hatbazar" columns="req_by"/>
       <index name="username" unique="true" columns="username"/>
+    </table>
+    <table name="user_log" schema="" catalog="hatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="logged_in_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="username" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="action" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="CHARACTER_SETS" schema="" catalog="information_schema" type="SYSTEM TABLE">
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -756,6 +767,56 @@
       <column name="max_user_connections" sqlType="INT UNSIGNED" length="10" precision="0" nullable="false" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="Host,User"/>
     </table>
+    <table name="items" schema="" catalog="ridisearch" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="item_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="stored_location" sqlType="VARCHAR" length="250" precision="0" nullable="false" jdbcType="12"/>
+      <column name="item_type" sqlType="VARCHAR" length="250" precision="0" nullable="false" jdbcType="12"/>
+      <column name="is_private" sqlType="BIT" length="1" precision="0" nullable="true" jdbcType="-7" def="YicwJw=="/>
+      <column name="date_created" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="date_updated" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="file" sqlType="LONGBLOB" length="2147483647" precision="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="items_ibfk_1" columns="user_id" ref-table="user" ref-schema="" ref-catalog="ridisearch" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="role" schema="" catalog="ridisearch" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="role_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="user_role_ibfk_2" table="user_role" schema="" catalog="ridisearch" columns="role_id"/>
+      <index name="role_name" unique="true" columns="role_name"/>
+    </table>
+    <table name="user" schema="" catalog="ridisearch" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_name" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone_number" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="date_created" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="date_updated" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="is_registered" sqlType="BIT" length="1" precision="0" nullable="true" jdbcType="-7" def="YicwJw=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="items_ibfk_1" table="items" schema="" catalog="ridisearch" columns="user_id"/>
+      <exported-key name="user_role_ibfk_1" table="user_role" schema="" catalog="ridisearch" columns="user_id"/>
+      <index name="user_name" unique="true" columns="user_name"/>
+    </table>
+    <table name="user_log" schema="" catalog="ridisearch" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="logged_in_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="user_name" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="action" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="user_role" schema="" catalog="ridisearch" type="TABLE">
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="role_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <foreign-key name="user_role_ibfk_1" columns="user_id" ref-table="user" ref-schema="" ref-catalog="ridisearch" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="user_role_ibfk_2" columns="role_id" ref-table="role" ref-schema="" ref-catalog="ridisearch" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
     <table name="book" schema="" catalog="test_aman" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -874,6 +935,71 @@
       <column name="item_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="visit_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="contact" schema="" catalog="testhatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
+      <column name="subject" sqlType="VARCHAR" length="150" precision="0" nullable="true" jdbcType="12"/>
+      <column name="message" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="is_new" sqlType="BIT" length="1" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="item" schema="" catalog="testhatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="category" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="price" sqlType="DOUBLE" length="22" precision="0" nullable="true" jdbcType="8"/>
+      <column name="status" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
+      <column name="contact_person" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="contact_phone" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="details" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="reserved_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="item_ibfk_1" columns="added_by" ref-table="user" ref-schema="" ref-catalog="testhatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="item_sold_ibfk_1" table="item_sold" schema="" catalog="testhatbazar" columns="item"/>
+    </table>
+    <table name="item_sold" schema="" catalog="testhatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="item" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="req_by" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="item_sold_ibfk_1" columns="item" ref-table="item" ref-schema="" ref-catalog="testhatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="item_sold_ibfk_2" columns="req_by" ref-table="user" ref-schema="" ref-catalog="testhatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="user" schema="" catalog="testhatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="32" precision="0" nullable="true" jdbcType="12"/>
+      <column name="created_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="changed_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="added_by" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="item_ibfk_1" table="item" schema="" catalog="testhatbazar" columns="added_by"/>
+      <exported-key name="item_sold_ibfk_2" table="item_sold" schema="" catalog="testhatbazar" columns="req_by"/>
+      <exported-key name="user_log_ibfk_1" table="user_log" schema="" catalog="testhatbazar" columns="user_id"/>
+      <index name="username" unique="true" columns="username"/>
+    </table>
+    <table name="user_log" schema="" catalog="testhatbazar" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="logged_in_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="username" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="action" sqlType="VARCHAR" length="250" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="user_log_ibfk_1" columns="user_id" ref-table="user" ref-schema="" ref-catalog="testhatbazar" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="first" schema="" catalog="testjava" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>

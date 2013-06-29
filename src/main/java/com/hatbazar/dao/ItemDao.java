@@ -119,11 +119,12 @@ public class ItemDao extends Mysql {
     }
 
     public List<Item> getDefaultItems() throws SQLException, InstantiationException, IllegalAccessException {
+        if(conn==null)connect();
         String sql ="SELECT * FROM "+table+" WHERE `status`='ACTIVE' ORDER BY `id` DESC";
         PreparedStatement ps = conn.prepareStatement(sql);
         List<Item> list = rows(find(ps));
         close();
-        if(list ==null)return null;
+        if(list ==null || list.size()==0)return null;
         else return list;
 
     }
